@@ -6,7 +6,7 @@ const { Option } = Select;
 
 const Filter = ({ data, setFilteredData }) => {
 
-    const initialFilter = { sport: "football", position: [], age: [8, 24] };
+    const initialFilter = { sport: "", position: [], age: [8, 24] };
     const [filter, setFilter] = useState(initialFilter);
 
     const positionFilter = ["RB", "LB", "CM", "CAM", "CDM", "QB", "WR", "TE", "CB", "GK", "ST", "LM", "RM"];
@@ -30,13 +30,13 @@ const Filter = ({ data, setFilteredData }) => {
 
         let filteredData = [];
 
-        if (filter.sport != "") {
+        if (filter.sport === "football") {
 
             for (let i = 0; i < data.length; i++) {
-                if (data[i].age < filter.age[0] || data[i].age > filter.age[1]){
+                if (data[i].age < filter.age[0] || data[i].age > filter.age[1]) {
                     continue;
                 }
-                console.log(filter.age,data[i].age);
+                console.log(filter.age, data[i].age);
                 if (filter.position.length) {
                     for (let j = 0; j < filter.position.length; j++) {
                         console.log(filter.position[j]);
@@ -48,12 +48,12 @@ const Filter = ({ data, setFilteredData }) => {
                         }
                     }
                 }
-                else{
+                else {
                     filteredData.push(data[i]);
                 }
             }
         }
-        else filteredData = data;
+        
         setFilteredData(filteredData);
     }
 
