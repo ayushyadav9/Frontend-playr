@@ -7,7 +7,7 @@ const Tournament = () => {
       <section class="title container">
         <div class="row">
           <div class="col-md-12">
-            <h1>Blog Layout</h1>
+            <h1>Tournaments List</h1>
             <div class="seperator"></div>
             <p>Blocks with hover effects</p>
           </div>
