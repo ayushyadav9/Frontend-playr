@@ -3,7 +3,6 @@ import "./Registration.css"
 import {
   UserOutlined,
   SolutionOutlined,
-  CameraOutlined,
   SmileOutlined,
 } from "@ant-design/icons";
 import { useState,useEffect } from "react";
