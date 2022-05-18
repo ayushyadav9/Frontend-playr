@@ -10,20 +10,12 @@ const Documents = ({ formData, setformData, handelStatus }) => {
   const handelNext = () => {
     if (buffer[0] !== 0 && buffer[1] !== 1) {
       setisLoading(true);
-    //   ipfs.files.add(buffer, (error, result) => {
-    //     setisLoading(false);
-    //     if (error) {
-    //       console.error(error);
-    //       message.error("Something went wrong!");
-    //       return;
-    //     }
-    //     setformData({
-    //       ...formData,
-    //       panIPFS: result[0].hash,
-    //       aadharIPFS: result[1].hash,
-    //     });
+        setformData({
+          ...formData,
+          panIPFS: buffer[0].hash,
+          aadharIPFS: buffer[1].hash,
+        });
         handelStatus(2);
-    //   });
     } else {
       message.error("Please choose Documents");
     }
