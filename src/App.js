@@ -7,6 +7,7 @@ import Tables from "./pages/Dashboard/Tables";
 import Billing from "./pages/Dashboard/Billing";
 import Rtl from "./pages/Dashboard/Rtl";
 import Profile from "./pages/Dashboard/Profile";
+import Photos from "./pages/Dashboard/Photos";
 import SignUp from "./pages/Dashboard/SignUp";
 import SignIn from "./pages/Dashboard/SignIn";
 import Main from "./components/DashboardLayout/Main";
@@ -66,6 +67,15 @@ function App() {
           element={
             <Main>
               <Profile />
+            </Main>
+          }
+        />
+        <Route
+          exact
+          path="/photos"
+          element={
+            <Main>
+              <Photos />
             </Main>
           }
         />
