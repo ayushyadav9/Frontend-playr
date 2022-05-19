@@ -143,7 +143,7 @@ img {
   padding: 45px 0;
 }
 
-.header .logo img {
+.header .playr-logo img {
   height: 55px;
 }
 
@@ -391,7 +391,9 @@ img {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
-  background: #3b3054 url(https://raw.githubusercontent.com/MohamedAridah/frontendmentor_url-shortening-api/137c1e11d724ff1e6df0413fefa70de622a74395/images/bg-shorten-desktop.svg) no-repeat right top;
+  background: #3b3054
+    url(https://raw.githubusercontent.com/MohamedAridah/frontendmentor_url-shortening-api/137c1e11d724ff1e6df0413fefa70de622a74395/images/bg-shorten-desktop.svg)
+    no-repeat right top;
   background-size: cover;
   padding: 45px;
   border-radius: 6px;
@@ -403,7 +405,9 @@ img {
 @media (max-width: 850px) {
   .url-shorten-form {
     flex-direction: column;
-    background: #3b3054 url(https://raw.githubusercontent.com/MohamedAridah/frontendmentor_url-shortening-api/137c1e11d724ff1e6df0413fefa70de622a74395/images/bg-shorten-mobile.svg) no-repeat right top;
+    background: #3b3054
+      url(https://raw.githubusercontent.com/MohamedAridah/frontendmentor_url-shortening-api/137c1e11d724ff1e6df0413fefa70de622a74395/images/bg-shorten-mobile.svg)
+      no-repeat right top;
     padding: 25px;
     margin-bottom: 0;
   }
@@ -757,7 +761,9 @@ img {
 
 .pricing {
   padding: 50px 0;
-  background: #3b3054 url(https://raw.githubusercontent.com/MohamedAridah/frontendmentor_url-shortening-api/137c1e11d724ff1e6df0413fefa70de622a74395/images/bg-boost-desktop.svg) no-repeat right;
+  background: #3b3054
+    url(https://raw.githubusercontent.com/MohamedAridah/frontendmentor_url-shortening-api/137c1e11d724ff1e6df0413fefa70de622a74395/images/bg-boost-desktop.svg)
+    no-repeat right;
   background-size: cover;
 }
 
@@ -807,7 +813,7 @@ img {
   flex: 1 0 auto;
 }
 
-.footer .logo img {
+.footer .playr-logo img {
   height: 55px;
   filter: brightness(10);
 }
@@ -867,8 +873,8 @@ img {
 
 .footer .social-media img:hover {
   transform: scale(1.1);
-  filter: invert(0%) sepia(59%) saturate(6585%) hue-rotate(125deg)
-    brightness(86%) contrast(85%);
+  filter: invert(0%) sepia(59%) saturate(6585%) hue-rotate(125deg) brightness(86%)
+    contrast(85%);
 }
 
 .attribution {

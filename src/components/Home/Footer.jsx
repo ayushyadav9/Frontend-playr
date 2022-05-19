@@ -5,7 +5,7 @@ const Footer = () => {
     <footer class="footer" id="resources">
       <div class="container">
         {/* <!-- Website Logo --> */}
-        <div class="logo">
+        <div class="playr-logo">
           <a href="/">
             <img src="./logo.png" alt="" />
           </a>
@@ -56,13 +56,8 @@ const Footer = () => {
       </div>
       {/* <!-- Made By --> */}
       <div class="attribution">
-        Designed and Develped by {" "}
-        <a
-          href="/"
-          class="outer-link"
-          target="_blank"
-          rel="noreferrer"
-        >
+        Designed and Develped by{" "}
+        <a href="/" class="outer-link" target="_blank" rel="noreferrer">
           Team playR
         </a>
       </div>
