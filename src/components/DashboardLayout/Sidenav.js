@@ -122,7 +122,7 @@ function Sidenav({ color }) {
     </svg>,
   ];
 
-  const signin = [
+  const photos = [
     <svg
       width="20"
       height="20"
@@ -201,6 +201,19 @@ function Sidenav({ color }) {
               {profile}
             </span>
             <span className="label">Profile</span>
+          </NavLink>
+        </Menu.Item>
+        <Menu.Item key="3">
+          <NavLink to="/photos">
+            <span
+              className="icon"
+              style={{
+                background: page === "photos" ? color : "",
+              }}
+            >
+              {photos}
+            </span>
+            <span className="label">Photos</span>
           </NavLink>
         </Menu.Item>
       </Menu>
