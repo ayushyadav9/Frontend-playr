@@ -11,7 +11,7 @@ import Photos from "./pages/Dashboard/Photos";
 import SignUp from "./pages/Dashboard/SignUp";
 import SignIn from "./pages/Dashboard/SignIn";
 import Main from "./components/DashboardLayout/Main";
-import "antd/dist/antd.css";
+import "antd/dist/antd.min.css";
 import "./assets/styles/main.css";
 import "./assets/styles/responsive.css";
 import Registration from "./pages/Registration/Registration";

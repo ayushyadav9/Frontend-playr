@@ -2,11 +2,11 @@ import React from "react";
 
 const Pricing = () => {
   return (
-    <section class="pricing" id="pricing">
-      <div class="container">
-        <div class="section-header">
+    <section className="pricing" id="pricing">
+      <div className="container">
+        <div className="section-header">
           <h2>Boost your Skills today</h2>
-          <a href="/" class="btn btn-lg">
+          <a href="/" className="btn btn-lg">
             Get Started
           </a>
         </div>

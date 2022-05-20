@@ -1,29 +1,40 @@
 import { Button, Form, Input, message } from "antd";
 import { UploadOutlined } from "@ant-design/icons";
 import { useState } from "react";
-
+const Buffer = require('buffer/').Buffer
+const { create } = require('ipfs-http-client');
+const ipfs = create({host: 'ipfs.infura.io', port: 5001, protocol: 'https'});
 
 const Documents = ({ formData, setformData, handelStatus }) => {
-  const [buffer, setbuffer] = useState([0, 1]);
+  const [buffer, setbuffer] = useState([]);
   const [isLoading, setisLoading] = useState(false);
 
-  const handelNext = () => {
-    if (buffer[0] !== 0 && buffer[1] !== 1) {
-      setisLoading(true);
-    //   ipfs.files.add(buffer, (error, result) => {
-    //     setisLoading(false);
-    //     if (error) {
-    //       console.error(error);
-    //       message.error("Something went wrong!");
-    //       return;
-    //     }
-    //     setformData({
-    //       ...formData,
-    //       panIPFS: result[0].hash,
-    //       aadharIPFS: result[1].hash,
-    //     });
+  async function getHash() {    
+    try {
+        const result = [];
+        for(let i=0;i<3;i++){
+          result[i] = await ipfs.add(Buffer.from(buffer[i]));
+        }
+        setformData({
+          ...formData,
+          birthCertificateIPFS: result[0].path,
+          aadharIPFS: result[1].path,
+          profilePhotoIPFS: result[2].path
+        });
+        setisLoading(false);
         handelStatus(2);
-    //   });
+    } catch(e) {
+        console.log(e)
+        setisLoading(false);
+        return
+    }
+}
+
+  const handelNext = () => {
+
+    if (buffer[0] && buffer[1] && buffer[2]) {
+      setisLoading(true);
+      getHash();
     } else {
       message.error("Please choose Documents");
     }
@@ -31,11 +42,12 @@ const Documents = ({ formData, setformData, handelStatus }) => {
 
   const captureFile = (e, i) => {
     const file = e.target.files[0];
+    //console.log(file);
     const reader = new window.FileReader();
     reader.readAsArrayBuffer(file);
     reader.onloadend = () => {
       let buf = buffer;
-      console.log(e, i);
+      //console.log(e, i);
       buf[i] = Buffer(reader.result);
       setbuffer(buf);
     };
@@ -44,7 +56,7 @@ const Documents = ({ formData, setformData, handelStatus }) => {
   return (
     <>
       <Form layout="vertical" style={{ margin: "50px auto", width: "30%" }}>
-        <Form.Item label="DOB Proof">
+        <Form.Item label="Birth Cerificate">
           <Input
             type="file"
             suffix={<UploadOutlined />}
