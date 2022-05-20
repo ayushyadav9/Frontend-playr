@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header class="header">
       <div class="container flex-between">
-        <div class="logo">
+        <div class="playr-logo">
           <a href="/">
             <img src="./logo.png" alt="" />
           </a>

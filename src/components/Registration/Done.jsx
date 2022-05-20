@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { Result, Button, Spin, message } from "antd";
+import { Result, Button, Spin } from "antd";
 // import { baseURL } from "../../../api";
 // import { useHistory } from "react-router-dom";
 
 const Done = ({ formData }) => {
 
+  // eslint-disable-next-line
   const [status, setStatus] = useState(0);
   // const history = useHistory();
 

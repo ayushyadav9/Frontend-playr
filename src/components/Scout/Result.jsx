@@ -5,6 +5,10 @@ const Result = ({ filteredData }) => {
 
     const columns = [
         {
+            title: 'Registration Id',
+            dataIndex: 'sofifa_id',
+        },
+        {
             title: 'Name',
             dataIndex: 'short_name',
         },
@@ -29,6 +33,10 @@ const Result = ({ filteredData }) => {
             dataIndex: 'player_positions',   
         },
         {
+            title: 'Location',
+            dataIndex: 'nationality_name',   
+        },
+        {
             title: 'Player Profile',
             dataIndex: 'sofifa_id',
             render: (text, record) => (
@@ -44,7 +52,7 @@ const Result = ({ filteredData }) => {
     }
 
     return (
-        <div className='container' style={{padding: '20px' }}>
+        <div className='container' style={{marginLeft:180,marginTop:20}}>
             <Table columns={columns} dataSource={filteredData} onChange={onChange} />;
         </div>
     )
