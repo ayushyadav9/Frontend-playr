@@ -1,6 +1,6 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
+import "./tailwind.css"
 import Home from "./pages/Home/Home";
 import Registration from "./pages/Registration/Registration"
 import Tournament from "./pages/Tournaments/Tournament";
@@ -18,12 +18,14 @@ import "./assets/styles/main.css";
 import "./assets/styles/responsive.css";
 import Scout from "./pages/Scout/Scout";
 import { Table } from "antd";
+import TourDetails from "./pages/Tournaments/TourDetails";
 
 function App() {
   return (
     <Router>
       <Routes>
-          <Route exact path="/tournament" element={<Tournament/>}/>
+          <Route exact path="/tournaments" element={<Tournament/>}/>
+          <Route exact path="/tournaments/:id" element={<TourDetails/>}/>
           <Route exact path="/scout" element={<Scout/>}/>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/register" element={<Registration />} />

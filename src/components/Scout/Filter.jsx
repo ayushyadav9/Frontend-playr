@@ -4,6 +4,7 @@ import { Select, Slider, Card, Button, Radio, Input } from 'antd';
 const { Option } = Select;
 const { Search } = Input;
 
+
 const Filter = ({ data, setFilteredData }) => {
 
     const initialFilter = { sport: "football", position: [], age: [8, 24] };
@@ -51,9 +52,6 @@ const Filter = ({ data, setFilteredData }) => {
                     filteredData.push(data[i]);
                 }
             }
-          }
-        } else {
-          filteredData.push(data[i]);
         }
 
         setFilteredData(filteredData);
