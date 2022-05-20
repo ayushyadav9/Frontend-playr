@@ -49,6 +49,8 @@ import convesionImg5 from "../../assets/images/face-2.jpg";
 import project1 from "../../assets/images/home-decor-1.jpeg";
 import project2 from "../../assets/images/home-decor-2.jpeg";
 import project3 from "../../assets/images/home-decor-3.jpeg";
+import "../../assets/styles/main.css";
+import "../../assets/styles/responsive.css";
 const { Title, Text } = Typography;
 
 function Profile() {

@@ -39,7 +39,8 @@ import face4 from "../../assets/images/face-4.jpg";
 import face5 from "../../assets/images/face-5.jpeg";
 import face6 from "../../assets/images/face-6.jpeg";
 import pencil from "../../assets/images/pencil.svg";
-
+import "../../assets/styles/main.css";
+import "../../assets/styles/responsive.css";
 const { Title } = Typography;
 
 const formProps = {

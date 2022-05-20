@@ -10,6 +10,8 @@
   * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 import { useState } from "react";
+import "../../assets/styles/main.css";
+import "../../assets/styles/responsive.css";
 
 import {
   Card,

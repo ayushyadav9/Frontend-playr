@@ -84,6 +84,7 @@ const Documents = ({ formData, setformData, handelStatus }) => {
       <div style={{ display: "flex", justifyContent: "center" }}>
         <Button
           type="ghoast"
+          shape="round"
           style={{ margin: "0 10px" }}
           onClick={() => handelStatus(0)}
         >
@@ -91,6 +92,7 @@ const Documents = ({ formData, setformData, handelStatus }) => {
         </Button>
         <Button
           type="primary"
+          shape="round"
           style={{ margin: "0 10px" }}
           onClick={handelNext}
           loading={isLoading}
