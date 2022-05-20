@@ -1,0 +1,35 @@
+{
+  "tournament": "League A",
+  "startDate" : "2015-08-01",
+  "endDate" : "2015-08-09",
+  "matches": [
+        {
+          "round": "Final", 
+          "date":  "2015-08-09",
+          "team1": "Manchester United",
+          "team2": "Tottenham Hotspur",
+          "score": { "ft": [1, 0] }
+        },
+        {
+          "round": "Semifinal", 
+          "date":  "2015-08-08",
+          "team1": "Manchester United",
+          "team2": "West Ham United",
+          "score": { "ft": [2, 0] }
+        },
+        {
+          "round": "quaterfinal", 
+          "date":  "2015-08-07",
+          "team1": "Manchester United",
+          "team2": "Aersnal",
+          "score": { "ft": [3, 0] }
+        },
+        {
+          "round": "group stage", 
+          "date":  "2015-08-05",
+          "team1": "Manchester United",
+          "team2": "Chelsea",
+          "score": { "ft": [1, 0] }
+        }
+  ]
+}

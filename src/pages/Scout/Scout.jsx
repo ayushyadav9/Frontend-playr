@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Filter from '../../components/Scout/Filter';
 import Result from '../../components/Scout/Result';
 import { Row, Col } from 'antd';
+import Header from "../../components/Home/Header"
 
 const Scout = () => {
     //const [data, setData] = useState([]);
@@ -15375,6 +15376,7 @@ const Scout = () => {
 
     return (
         <>
+        <Header/>
             <Row>
                 <Col span={6}>
                     <Filter data={data} setFilteredData={setFilteredData} />
