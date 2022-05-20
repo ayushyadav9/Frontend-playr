@@ -11,7 +11,8 @@ const topPosts = [ {
   postedByUser: 'Mario',
   timeStamp: Date.now(),
   postId: 'Mario69',
-  content: 'What are the steps to be taken to bring the game Khokho into the olympics.',
+  title:  'What are the steps to be taken to bring the game Khokho into the olympics.',
+  content: 'Test Desc',
   voteCount: 927,
   comments: []
 },
@@ -19,7 +20,8 @@ const topPosts = [ {
   postedByUser: 'Jay',
   timeStamp: Date.now(),
   postId: 'Jay131',
-  content: 'Future of Esports in India?',
+  title: 'Future of Esports in India?',
+  content: 'Test Desc',
   voteCount: 561,
   comments: []
 }]
@@ -29,7 +31,8 @@ const dummyPosts = [
     postedByUser: 'Mario',
     timeStamp: Date.now(),
     postId: 'Mario69',
-    content: 'What are the steps to be taken to bring the game Khokho into the olympics.',
+    title: 'What are the steps to be taken to bring the game Khokho into the olympics.',
+    content: 'Test Desc',
     voteCount: 1,
     comments: []
   },
@@ -37,7 +40,8 @@ const dummyPosts = [
     postedByUser: 'Andrew',
     timeStamp: Date.now(),
     postId: 'Andrew220',
-    content: 'HOW DIFFICULT IS IT TO BECOME A PROFESSIONAL FOOTBALLER?',
+    title: 'HOW DIFFICULT IS IT TO BECOME A PROFESSIONAL FOOTBALLER?',
+    content: 'Test Desc',
     voteCount: 1,
     comments: []
   }];
@@ -90,13 +94,13 @@ const Forum = () => {
 
   const voteUpComment = (key) => {
     var newPostArray = [...posts];
-    ++newPostArray[modal.key].comments[key].voteCount;
+    ++newPostArray[modal.key].comments[key].upVoteCount;
     setPosts(newPostArray);
   }
 
   const downVoteComment = (key) => {
     var newPostArray = [...posts];
-    --newPostArray[modal.key].comments[key].voteCount;
+    --newPostArray[modal.key].comments[key].downVoteCount;
     setPosts(newPostArray);
   }
 
@@ -118,7 +122,7 @@ const Forum = () => {
         </Modal>
         <Modal
           footer={[]}
-          title={modal.post.content}
+          title={modal.post.title}
           centered
           visible={visible1}
           onOk={() => setVisible1(false)}
@@ -162,7 +166,7 @@ const Forum = () => {
                 <Col span={23}>
                   <List.Item.Meta
                     avatar={<Avatar src={'https://joeschmoe.io/api/v1/random'} />}
-                    title={item.content}
+                    title={item.title}
                     description={<CardHeader postedByUser={item.postedByUser} timeStamp={item.timeStamp} />}
                   />
                   {item.content}
@@ -205,7 +209,7 @@ const Forum = () => {
                 <Col span={23}>
                   <List.Item.Meta
                     avatar={<Avatar src={'https://joeschmoe.io/api/v1/random'} />}
-                    title={item.content}
+                    title={item.title}
                     description={<CardHeader postedByUser={item.postedByUser} timeStamp={item.timeStamp} />}
                   />
                   {item.content}

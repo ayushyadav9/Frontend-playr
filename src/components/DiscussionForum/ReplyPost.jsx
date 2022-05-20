@@ -20,7 +20,8 @@ const ReplyPost = (props) => {
           timeStamp : Date.now(),
           commentId : user + Math.floor(Math.random()*1000),
           content : commentInput,
-          voteCount:0
+          upVoteCount:0,
+          downVoteCount:0
           }
           console.log(commentDetails);
           props.addComment(commentDetails);

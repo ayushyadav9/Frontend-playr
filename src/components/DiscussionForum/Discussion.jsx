@@ -58,8 +58,8 @@ function Discussion(props) {
                 renderItem={(comment, key) => (
                     <List.Item
                         actions={[
-                            <div onClick={() => voteUp(key)}><IconText icon={LikeOutlined} text={comment.voteCount} key="list-vertical-star-o" /></div>,
-                            <div onClick={() => downVote(key)}><IconText icon={DislikeOutlined} text={comment.voteCount} key="list-vertical-like-o" /></div>
+                            <div onClick={() => voteUp(key)}><IconText icon={LikeOutlined} text={comment.upVoteCount} key="list-vertical-star-o" /></div>,
+                            <div onClick={() => downVote(key)}><IconText icon={DislikeOutlined} text={comment.downVoteCount} key="list-vertical-like-o" /></div>
                         ]}
                     >
                         <List.Item.Meta
