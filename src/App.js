@@ -14,9 +14,11 @@ import SignUp from "./pages/Dashboard/SignUp";
 import SignIn from "./pages/Dashboard/SignIn";
 import Main from "./components/DashboardLayout/Main";
 import "antd/dist/antd.min.css";
-import "./assets/styles/main.css";
-import "./assets/styles/responsive.css";
+import "./assets/styles/main.module.css";
+import "./assets/styles/responsive.module.css";
+import Registration from "./pages/Registration/Registration";
 import Scout from "./pages/Scout/Scout";
+import Forum from "./pages/DiscussionForum/Forum";
 import { Table } from "antd";
 import TourDetails from "./pages/Tournaments/TourDetails";
 
@@ -30,6 +32,7 @@ function App() {
         <Route exact path="/" element={<Home />} />
         <Route exact path="/register" element={<Registration />} />
         <Route exact path="/scout" element={<Scout />} />
+        <Route exact path="/discussion-forums" element={<Forum />} />
         <Route
           exact
           path="/dashboard"
