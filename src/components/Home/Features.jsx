@@ -2,44 +2,44 @@ import React from "react";
 
 const Features = () => {
   return (
-    <section class="features" id="features">
-      <div class="container">
+    <section className="features" id="features">
+      <div className="container">
         {/* <!-- Short URL Feature --> */}
-        <div class="url-shorten-feature">
-          <form class="url-shorten-form" id="url-shorten-form">
+        <div className="url-shorten-feature">
+          <form className="url-shorten-form" id="url-shorten-form">
             <div>
               <input
                 type="text"
-                class="url-input"
+                className="url-input"
                 placeholder="Search a Sport or Tournament here..."
-                autocomplete="off"
+                autoComplete="off"
               />
-              <span class="alert"></span>
+              <span className="alert"></span>
             </div>
-            <button type="submit" class="btn btn-lg btn-plus-icon">
+            <button type="submit" className="btn btn-lg btn-plus-icon">
               Search!
             </button>
           </form>
-          <div class="url-shorten-results"></div>
+          <div className="url-shorten-results"></div>
         </div>
         {/* <!-- Advanced Features --> */}
-        <div class="more-features">
-          <div class="section-header">
+        <div className="more-features">
+          <div className="section-header">
             <h2>Advanced Statistics</h2>
             <p>
               Track how your links are performing across the web with our
               advanced statistics dashboard.
             </p>
           </div>
-          <div class="more-features-content">
-            <div class="feature">
-              <div class="feature-illustration">
+          <div className="more-features-content">
+            <div className="feature">
+              <div className="feature-illustration">
                 <img
                   src="./images/Home/icon-brand-recognition.svg"
                   alt="Feature Illustration Icon"
                 />
               </div>
-              <div class="feature-details">
+              <div className="feature-details">
                 <h3>Brand Recognition</h3>
                 <p>
                   Boost your brand recognition with each click. Generic links
@@ -48,14 +48,14 @@ const Features = () => {
                 </p>
               </div>
             </div>
-            <div class="feature">
-              <div class="feature-illustration">
+            <div className="feature">
+              <div className="feature-illustration">
                 <img
                   src="./images/Home/icon-detailed-records.svg"
                   alt="Feature Illustration Icon"
                 />
               </div>
-              <div class="feature-details">
+              <div className="feature-details">
                 <h3>Detailed Records</h3>
                 <p>
                   Gain insights into who is clicking your links. Knowing when
@@ -64,14 +64,14 @@ const Features = () => {
                 </p>
               </div>
             </div>
-            <div class="feature">
-              <div class="feature-illustration">
+            <div className="feature">
+              <div className="feature-illustration">
                 <img
                   src="./images/Home/icon-fully-customizable.svg"
                   alt="Feature Illustration Icon"
                 />
               </div>
-              <div class="feature-details">
+              <div className="feature-details">
                 <h3>Fully Customizable</h3>
                 <p>
                   Improve brand awareness and content discoverability through

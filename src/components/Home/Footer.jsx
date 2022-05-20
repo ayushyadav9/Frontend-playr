@@ -2,8 +2,8 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer class="footer" id="resources">
-      <div class="container">
+    <footer className="footer" id="resources">
+      <div className="container">
         {/* <!-- Website Logo --> */}
         <div class="playr-logo">
           <a href="/">
@@ -11,8 +11,8 @@ const Footer = () => {
           </a>
         </div>
         {/* <!-- Quick Links --> */}
-        <div class="quick-links">
-          <div class="links-group">
+        <div className="quick-links">
+          <div className="links-group">
             <span>Features</span>
             <div>
               <a href="/">Tournament</a>
@@ -20,7 +20,7 @@ const Footer = () => {
               <a href="/">Players</a>
             </div>
           </div>
-          <div class="links-group">
+          <div className="links-group">
             <span>Resources</span>
             <div>
               <a href="/">Blog</a>
@@ -28,7 +28,7 @@ const Footer = () => {
               <a href="/">Support</a>
             </div>
           </div>
-          <div class="links-group">
+          <div className="links-group">
             <span>Company</span>
             <div>
               <a href="/">About</a>
@@ -39,7 +39,7 @@ const Footer = () => {
           </div>
         </div>
         {/* <!-- Social Media --> */}
-        <div class="social-media">
+        <div className="social-media">
           <a href="/">
             <img src="./images/Home/icon-facebook.svg" alt="Facebook Logo" />
           </a>
