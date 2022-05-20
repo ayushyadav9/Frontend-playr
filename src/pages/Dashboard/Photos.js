@@ -15,6 +15,8 @@ import {
 } from "antd";
 import { EditOutlined, EllipsisOutlined, SettingOutlined } from "@ant-design/icons";
 import { useState } from "react";
+import "../../assets/styles/main.css";
+import "../../assets/styles/responsive.css";
 const { Meta } = Card;
 
 function Photos() {

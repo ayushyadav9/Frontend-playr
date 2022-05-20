@@ -7,3 +7,10 @@ body {
     border: 1px solid #f0f0f0;
     border-radius: 9px;
   }
+  .register-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #d9edff;
+  }

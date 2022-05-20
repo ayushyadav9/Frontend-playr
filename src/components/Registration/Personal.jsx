@@ -144,6 +144,7 @@ const Personal = ({ formData, setformData, handelStatus }) => {
       <div style={{ display: "flex", justifyContent: "center" }}>
         <Button
           type="primary"
+          shape = "round"
           style={{ margin: "0 10px" }}
           onClick={handelNext}
           loading={isLoading}
