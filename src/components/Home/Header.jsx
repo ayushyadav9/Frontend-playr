@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header class="header">
-      <div class="container flex-between">
-        <div class="playr-logo">
+    <header className="header">
+      <div className="container flex-between">
+        <div className="playr-logo">
           <a href="/">
             <img src="./logo.png" alt="" />
           </a>
