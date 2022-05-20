@@ -1,17 +1,22 @@
 import React, { useEffect, useState } from "react";
 import { Result, Button, Spin } from "antd";
 // import { baseURL } from "../../../api";
-// import { useHistory } from "react-router-dom";
+import {useNavigate} from "react-router-dom"
 
-const Done = ({ formData }) => {
+const Done = ({handelStatus }) => {
 
   // eslint-disable-next-line
   const [status, setStatus] = useState(0);
-  // const history = useHistory();
+  const navigate = useNavigate();
 
-  useEffect(() => {
-    console.log(formData)
-  }, [formData]);
+  if(status == 0){
+    setInterval(() => {
+      setStatus(1);
+      //handelStatus(3);
+    }, 1000);
+  }
+  //After Saving data set status to 1
+  //And set handel status to 3;
 
   return (
     <>
@@ -30,7 +35,7 @@ const Done = ({ formData }) => {
           title="Successfully Registered for vKYC"
           subTitle="Login credentials sent via Email"
           extra={[
-            <Button type="primary" key="console" >
+            <Button type="primary" key="console" onClick={()=>navigate("/")}>
               Proceed to Login
             </Button>            
           ]}
@@ -41,7 +46,7 @@ const Done = ({ formData }) => {
           title="Failed To Register"
           subTitle="You can try again after sometime"
           extra={[
-            <Button type="primary" key="console">
+            <Button type="primary" key="console" onClick={()=>navigate("/")}>
               Go to Home
             </Button>,
           ]}

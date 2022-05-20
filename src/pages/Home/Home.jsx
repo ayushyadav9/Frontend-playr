@@ -8,7 +8,7 @@ import "./Home.css";
 
 const Home = () => {
   return (
-    <main class="main">
+    <main className="main">
       <Header/>
       <Landing/>
       <Features/>
