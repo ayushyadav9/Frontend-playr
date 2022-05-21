@@ -4,7 +4,7 @@ import { tournaments } from "../../dummy/tournament";
 import { useNavigate } from "react-router-dom";
 
 const Tournament = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   return (
     <>
       <section class="text-gray-600 body-font ">
@@ -38,7 +38,7 @@ const Tournament = () => {
                       </h1>
                       <p class="leading-relaxed mb-5">{tour.desc}</p>
 
-                      <span class="inline-flex items-center" >
+                      <span class="inline-flex items-center">
                         <img
                           alt="blog"
                           src="https://dummyimage.com/103x103"
@@ -48,7 +48,10 @@ const Tournament = () => {
                           <span class="title-font font-medium text-gray-900">
                             {tour.registeredBy}
                           </span>
-                          <button onClick={()=>navigate(`${tour.id}`)} class="flex w-auto mx-10 text-white bg-indigo-500 inline-flex items-center border-0 px-2 py-1 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+                          <button
+                            onClick={() => navigate(`${tour.id}`)}
+                            class="flex w-auto mx-10 text-white bg-indigo-500 inline-flex items-center border-0 px-2 py-1 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+                          >
                             Apply
                             <svg
                               fill="none"
