@@ -37,7 +37,6 @@ const Tournament = () => {
                         {tour.name}
                       </h1>
                       <p class="leading-relaxed mb-5">{tour.desc}</p>
-
                       <span class="inline-flex items-center" >
                         <img
                           alt="blog"
