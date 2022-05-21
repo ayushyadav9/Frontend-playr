@@ -24,6 +24,8 @@ import TournamentRegistration from "./pages/Organizer/Registration";
 import Organize from "./pages/Organizer/Organize";
 import OngoingTournament from "./pages/Organizer/OngoingTournament";
 import Brackets from "./components/TournamentBrackets/Brackets";
+import TournamentUpdate from "./pages/Organizer/TournamentUpdate";
+import UpdateMatchResult from "./pages/Organizer/UpdateMatchResult";
 
 function App() {
   return (
@@ -112,10 +114,30 @@ function App() {
         />
         <Route
           exact
-          path="/registration"
+          path="/onspot-registration"
           element={
             <OrganizerMain>
               <TournamentRegistration />
+            </OrganizerMain>
+          }
+        />
+
+        <Route
+          exact
+          path="/ongoing-tournament/:id"
+          element={
+            <OrganizerMain>
+              <TournamentUpdate />
+            </OrganizerMain>
+          }
+        />
+
+        <Route
+          exact
+          path="/ongoing-tournament/:tid/:mid"
+          element={
+            <OrganizerMain>
+              <UpdateMatchResult />
             </OrganizerMain>
           }
         />
