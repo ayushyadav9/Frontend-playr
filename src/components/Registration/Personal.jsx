@@ -23,8 +23,6 @@ const Personal = ({ formData, setformData, handelStatus }) => {
       formData.gender.length
     ) {
       setisLoading(true);
-      console.log(formData);
-      //save data
       handelStatus(1);
       setisLoading(false);
     } else {
