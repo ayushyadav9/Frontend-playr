@@ -23,6 +23,7 @@ import Login from "./pages/Registration/Login";
 import TournamentRegistration from "./pages/Organizer/Registration";
 import Organize from "./pages/Organizer/Organize";
 import OngoingTournament from "./pages/Organizer/OngoingTournament";
+import Brackets from "./components/TournamentBrackets/Brackets";
 
 function App() {
   return (
@@ -33,9 +34,10 @@ function App() {
         <Route exact path="/scout" element={<Scout />} />
         <Route exact path="/" element={<Home />} />
         <Route exact path="/register" element={<Registration />} />
-        <Route exact path="/scout" element={<Scout />} />
         <Route exact path="/discussion-forums" element={<Forum />} />
         <Route exact path="/login" element={<Login />} />
+        <Route exact path="/brackets" element={<Brackets />} />
+        <Route exact path="/signin" element={<SignIn />} />
         <Route
           exact
           path="/dashboard"

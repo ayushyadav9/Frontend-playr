@@ -171,149 +171,39 @@ function Home() {
   const list = [
     {
       img: ava1,
-      Title: "Rajura Football League",
-      level: "District",
-      date: "03/05/2022",
+      Title: "Santosh Trophy",
+      level: "National",
+      date: "12/09/2021",
       result: "Semi-Finals",
-      // bud: "$14,000",
-      // progress: <Progress percent={60} size="small" />,
-      // member: (
-      //   <div className="avatar-group mt-2">
-      //     <Tooltip placement="bottom" title="Ryan Tompson">
-      //       <img className="tootip-img" src={team1} alt="" />
-      //     </Tooltip>
-      //     <Tooltip placement="bottom" title="Romina Hadid">
-      //       <img className="tootip-img" src={team2} alt="" />
-      //     </Tooltip>
-      //     <Tooltip placement="bottom" title="Alexander Smith">
-      //       <img className="tootip-img" src={team3} alt="" />
-      //     </Tooltip>
-      //     <Tooltip placement="bottom" title="Jessica Doe">
-      //       <img className="tootip-img" src={team4} alt="" />
-      //     </Tooltip>
-      //   </div>
-      // ),
     },
     {
       img: ava2,
-      Title: "Rajura Football League 2",
-      level: "District",
-      date: "03/05/2022",
+      Title: "IFA Shield Cup",
+      level: "State",
+      date: "29/11/2021",
       result: "Winners",
     },
     {
       img: ava3,
-      Title: "Rajura Football League 3",
+      Title: "Federation Football League 3",
       level: "District",
-      date: "03/05/2022",
+      date: "03/01/2022",
       result: "Qualifiers",
     },
     {
       img: ava4,
-      Title: "Rajura Football League 4",
+      Title: "Subroto cup",
       level: "District",
-      date: "03/05/2022",
+      date: "03/05/2020",
       result: "Semi-Finals",
     },
     {
       img: ava5,
-      Title: "Rajura Football League 5",
+      Title: "TG Football League 5",
       level: "District",
-      date: "03/05/2022",
+      date: "05/07/2020",
       result: "Winners",
-    },
-    // {
-    //   img: ava2,
-    //   Title: "Progress Track",
-    //   bud: "$3,000",
-    //   progress: <Progress percent={10} size="small" />,
-    //   member: (
-    //     <div className="avatar-group mt-2">
-    //       <Tooltip placement="bottom" title="Ryan Tompson">
-    //         <img className="tootip-img" src={team1} alt="" />
-    //       </Tooltip>
-    //       <Tooltip placement="bottom" title="Romina Hadid">
-    //         <img className="tootip-img" src={team2} alt="" />
-    //       </Tooltip>
-    //     </div>
-    //   ),
-    // },
-    // {
-    //   img: ava3,
-    //   Title: "Fix Platform Errors",
-    //   bud: "Not Set",
-    //   progress: <Progress percent={100} size="small" status="active" />,
-    //   member: (
-    //     <div className="avatar-group mt-2">
-    //       <Tooltip placement="bottom" title="Ryan Tompson">
-    //         <img className="tootip-img" src={team1} alt="" />
-    //       </Tooltip>
-    //       <Tooltip placement="bottom" title="Romina Hadid">
-    //         <img className="tootip-img" src={team1} alt="" />
-    //       </Tooltip>
-    //       <Tooltip placement="bottom" title="Alexander Smith">
-    //         <img className="tootip-img" src={team3} alt="" />
-    //       </Tooltip>
-    //     </div>
-    //   ),
-    // },
-    // {
-    //   img: ava4,
-    //   Title: "Launch new Mobile App",
-    //   bud: "$20,600",
-    //   progress: <Progress percent={100} size="small" status="active" />,
-    //   member: (
-    //     <div className="avatar-group mt-2">
-    //       <Tooltip placement="bottom" title="Ryan Tompson">
-    //         <img className="tootip-img" src={team1} alt="" />
-    //       </Tooltip>
-    //       <Tooltip placement="bottom" title="Romina Hadid">
-    //         <img className="tootip-img" src={team2} alt="" />
-    //       </Tooltip>
-    //     </div>
-    //   ),
-    // },
-    // {
-    //   img: ava5,
-    //   Title: "Add the New Landing Page",
-    //   bud: "$4,000",
-    //   progress: <Progress percent={80} size="small" />,
-    //   member: (
-    //     <div className="avatar-group mt-2">
-    //       <Tooltip placement="bottom" title="Ryan Tompson">
-    //         <img className="tootip-img" src={team1} alt="" />
-    //       </Tooltip>
-    //       <Tooltip placement="bottom" title="Romina Hadid">
-    //         <img className="tootip-img" src={team2} alt="" />
-    //       </Tooltip>
-    //       <Tooltip placement="bottom" title="Alexander Smith">
-    //         <img className="tootip-img" src={team3} alt="" />
-    //       </Tooltip>
-    //       <Tooltip placement="bottom" title="Jessica Doe">
-    //         <img className="tootip-img" src={team4} alt="" />
-    //       </Tooltip>
-    //     </div>
-    //   ),
-    // },
-
-    // {
-    //   img: ava6,
-    //   Title: "Redesign Online Store",
-    //   bud: "$2,000",
-    //   progress: (
-    //     <Progress percent={100} size="small" status="exception" format={() => "Cancel"} />
-    //   ),
-    //   member: (
-    //     <div className="avatar-group mt-2">
-    //       <Tooltip placement="bottom" title="Ryan Tompson">
-    //         <img className="tootip-img" src={team1} alt="" />
-    //       </Tooltip>
-    //       <Tooltip placement="bottom" title="Romina Hadid">
-    //         <img className="tootip-img" src={team2} alt="" />
-    //       </Tooltip>
-    //     </div>
-    //   ),
-    // },
+    }
   ];
 
   const timelineList = [

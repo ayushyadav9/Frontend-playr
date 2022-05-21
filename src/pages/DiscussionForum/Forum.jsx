@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Discussion from '../../components/DiscussionForum/Discussion'
 import NewPost from '../../components/DiscussionForum/NewPost';
 import { List, Avatar, Space, Row, Col, Button } from 'antd';
-import { MessageOutlined, ShareAltOutlined, StarOutlined, InstagramOutlined, TwitterOutlined, EditOutlined,EditFilled } from '@ant-design/icons';
+import { MessageOutlined, ShareAltOutlined, StarOutlined, InstagramOutlined, TwitterOutlined, EditFilled } from '@ant-design/icons';
 import { Modal, Card } from 'antd';
 import CardHeader from '../../components/DiscussionForum/CardHeader';
 import './Forum.css'
