@@ -1,21 +1,10 @@
-/*!
-  =========================================================
-  * Muse Ant Design Dashboard - v1.0.0
-  =========================================================
-  * Product Page: https://www.creative-tim.com/product/muse-ant-design-dashboard
-  * Copyright 2021 Creative Tim (https://www.creative-tim.com)
-  * Licensed under MIT (https://github.com/creativetimofficial/muse-ant-design-dashboard/blob/main/LICENSE.md)
-  * Coded by Creative Tim
-  =========================================================
-  * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
 import { useState } from "react";
 import ava1 from "../../assets/images/logo-shopify.svg";
 import ava2 from "../../assets/images/logo-atlassian.svg";
 import ava3 from "../../assets/images/logo-slack.svg";
 import ava4 from "../../assets/images/logo-spotify.svg";
 import ava5 from "../../assets/images/logo-jira.svg";
-import {QRCodeSVG} from 'qrcode.react';
+import { QRCodeSVG } from "qrcode.react";
 import {
   Row,
   Col,
@@ -30,7 +19,7 @@ import {
   message,
   Typography,
   Table,
-  Modal
+  Modal,
 } from "antd";
 
 import {
@@ -38,9 +27,10 @@ import {
   TwitterOutlined,
   InstagramOutlined,
   VerticalAlignTopOutlined,
-  QrcodeOutlined
+  QrcodeOutlined,
 } from "@ant-design/icons";
 
+import TournamentBracket from "../../components/TournamentBrackets/Brackets";
 import BgProfile from "../../assets/images/bg-profile.jpg";
 import profilavatar from "../../assets/images/face-1.jpg";
 import convesionImg from "../../assets/images/face-3.jpg";
@@ -56,6 +46,19 @@ import "../../assets/styles/responsive.css";
 const { Title, Text } = Typography;
 
 function Profile() {
+  const [isModalVisible, setIsModalVisible] = useState(false);
+
+  const showModal = () => {
+    setIsModalVisible(true);
+  };
+
+  const handleOk = () => {
+    setIsModalVisible(false);
+  };
+
+  const handleCancel = () => {
+    setIsModalVisible(false);
+  };
   const [imageURL, setImageURL] = useState(false);
   const [, setLoading] = useState(false);
 
@@ -309,6 +312,15 @@ function Profile() {
       title: "",
       key: "more",
       dataIndex: "more",
+      render: () => {
+        return (
+          <>
+            <Button type="primary" onClick={showModal}>
+              Details
+            </Button>
+          </>
+        );
+      },
     },
   ];
 
@@ -319,7 +331,6 @@ function Profile() {
       level: "District",
       date: <span className="text-xs font-weight-bold">03/01/2018</span>,
       result: "Semi-Finals",
-      more: <button>Details</button>,
     },
     {
       key: "2",
@@ -355,26 +366,43 @@ function Profile() {
     },
   ];
 
-  const [QRVisible, setQRVisible] = useState(false)
+  const [QRVisible, setQRVisible] = useState(false);
   const openQR = () => {
     setQRVisible(!QRVisible);
-  }
+  };
 
   return (
     <>
       <div>
-        <Modal title="Scan Me"
+        <Modal
+          title="Tournament Details"
+          visible={isModalVisible}
+          onOk={handleOk}
+          onCancel={handleCancel}
+          width={1000}
+          centered
+        >
+          <TournamentBracket />
+        </Modal>
+        <Modal
+          title="Scan Me"
           visible={QRVisible}
           onCancel={openQR}
           footer={[]}
-          width={350}>
-          <div style={{marginLeft:110}}>
+          width={350}
+        >
+          <div style={{ marginLeft: 110 }}>
             <Avatar size={74} shape="round" src={profilavatar} />
             <p>Sarah Jacob</p>
             <p>Id: 292180</p>
           </div>
-          <QRCodeSVG style={{marginLeft:25}} size={250} value="http://localhost:3000/profile"/><br/>
-          <p style={{marginLeft:21}}>Any one with this QR can view your Profile</p>
+          <QRCodeSVG
+            style={{ marginLeft: 25 }}
+            size={250}
+            value="http://localhost:3000/profile"
+          />
+          <br />
+          <p style={{ marginLeft: 21 }}>Any one with this QR can view your Profile</p>
         </Modal>
       </div>
 
@@ -394,14 +422,18 @@ function Profile() {
 
                 <div className="avatar-info">
                   <h4 className="font-semibold m-0">Sarah Jacob</h4>
-                  <p>Footballer<br/>National Level</p>
+                  <p>
+                    Footballer
+                    <br />
+                    National Level
+                  </p>
                 </div>
                 <div className="avatar-info">
-                  <QrcodeOutlined style={{ fontSize: '60px' }} onClick={openQR} />
+                  <QrcodeOutlined style={{ fontSize: "60px" }} onClick={openQR} />
                 </div>
               </Avatar.Group>
             </Col>
-            <Col
+            {/* <Col
               span={24}
               md={12}
               style={{
@@ -415,7 +447,7 @@ function Profile() {
                 <Radio.Button value="b">TEAMS</Radio.Button>
                 <Radio.Button value="c">PROJECTS</Radio.Button>
               </Radio.Group>
-            </Col>
+            </Col> */}
           </Row>
         }
       ></Card>
@@ -431,9 +463,6 @@ function Profile() {
               <Descriptions.Item label="Full Name" span={3}>
                 Sarah Emily Jacob
               </Descriptions.Item>
-              {/* <Descriptions.Item label="Mobile" span={3}>
-                (44) 123 1234 123
-              </Descriptions.Item> */}
               <Descriptions.Item label="Email" span={3}>
                 sarahjacob@mail.com
               </Descriptions.Item>
@@ -461,41 +490,6 @@ function Profile() {
                 </a>
               </Descriptions.Item>
             </Descriptions>
-            {/* <ul className="list settings-list">
-              <li>
-                <h6 className="list-header text-sm text-muted">ACCOUNT</h6>
-              </li>
-              <li>
-                <Switch defaultChecked />
-
-                <span>Email me when someone follows me</span>
-              </li>
-              <li>
-                <Switch />
-                <span>Email me when someone answers me</span>
-              </li>
-              <li>
-                <Switch defaultChecked />
-                <span>Email me when someone mentions me</span>
-              </li>
-              <li>
-                <h6 className="list-header text-sm text-muted m-0">
-                  APPLICATION
-                </h6>
-              </li>
-              <li>
-                <Switch defaultChecked />
-                <span>New launches and projects</span>
-              </li>
-              <li>
-                <Switch defaultChecked />
-                <span>Monthly product updates</span>
-              </li>
-              <li>
-                <Switch defaultChecked />
-                <span>Subscribe to newsletter</span>
-              </li>
-            </ul> */}
           </Card>
         </Col>
         <Col span={12}>
@@ -506,20 +500,10 @@ function Profile() {
             extra={<Button type="link">{pencil}</Button>}
             bodyStyle={{ paddingTop: 0, paddingBottom: 16 }}
           >
-            {/* <p className="text-dark">
-              {" "}
-              Hi, I’m Alec Thompson, Decisions: If you can’t decide, the answer is no. If
-              two equally difficult paths, choose the one more painful in the short term
-              (pain avoidance is creating an illusion of equality).{" "}
-            </p>
-            <hr className="my-25" /> */}
             <Descriptions title="">
               <Descriptions.Item label="Team" span={3}>
                 Deccan Tigers
               </Descriptions.Item>
-              {/* <Descriptions.Item label="Mobile" span={3}>
-                (44) 123 1234 123
-              </Descriptions.Item> */}
               <Descriptions.Item label="Jersey Number" span={3}>
                 27
               </Descriptions.Item>
@@ -535,44 +519,11 @@ function Profile() {
             </Descriptions>
           </Card>
         </Col>
-        {/* <Col span={24} md={8} className="mb-24">
-          <Card
-            bordered={false}
-            title={<h6 className="font-semibold m-0">Conversations</h6>}
-            className="header-solid h-full"
-            bodyStyle={{ paddingTop: 0, paddingBottom: 16 }}
-          >
-            <List
-              itemLayout="horizontal"
-              dataSource={data}
-              split={false}
-              className="conversations-list"
-              renderItem={(item) => (
-                <List.Item actions={[<Button type="link">REPLY</Button>]}>
-                  <List.Item.Meta
-                    avatar={<Avatar shape="square" size={48} src={item.avatar} />}
-                    title={item.title}
-                    description={item.description}
-                  />
-                </List.Item>
-              )}
-            />
-          </Card>
-        </Col> */}
       </Row>
       <Card
         bordered={false}
         className="criclebox tablespace mb-24"
         title="All Tournaments"
-      // extra={
-      //   <>
-      //     <Radio.Group onChange={onChange} defaultValue="all">
-      //       <Radio.Button value="all">All</Radio.Button>
-      //       <Radio.Button value="online">ONLINE</Radio.Button>
-      //       <Radio.Button value="store">STORES</Radio.Button>
-      //     </Radio.Group>
-      //   </>
-      // }
       >
         <div className="ant-list-box table-responsive">
           <Table
@@ -582,37 +533,6 @@ function Profile() {
             scroll={{ y: 240 }}
             className="ant-border-space"
           />
-          {/* <table className="width-100">
-            <thead>
-              <tr>
-                <th>NAME</th>
-                <th>LEVEL</th>
-                <th>DATE</th>
-                <th>RESULT</th>
-              </tr>
-            </thead>
-            <tbody>
-              {list.map((d, index) => (
-                <tr key={index}>
-                  <td>
-                    <h6>
-                      <img src={d.img} alt="" className="avatar-sm mr-10" /> {d.Title}
-                    </h6>
-                  </td>
-                  <td>{d.level}</td>
-                  <td>
-                    <span className="text-xs font-weight-bold">{d.date} </span>
-                  </td>
-                  <td>
-                    <div className="percent-progress">{d.result}</div>
-                  </td>
-                  <td>
-                    <button>Details</button>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table> */}
         </div>
       </Card>
     </>
