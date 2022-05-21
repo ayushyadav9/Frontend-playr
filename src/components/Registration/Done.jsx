@@ -46,7 +46,7 @@ const Done = ({handelStatus }) => {
           title="Failed To Register"
           subTitle="You can try again after sometime"
           extra={[
-            <Button type="primary" key="console" onClick={()=>navigate("/")}>
+            <Button shape="round" type="primary" key="console" onClick={()=>navigate("/")}>
               Go to Home
             </Button>,
           ]}

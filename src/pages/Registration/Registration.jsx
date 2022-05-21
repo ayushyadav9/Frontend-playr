@@ -56,6 +56,7 @@ const Register = () => {
 
 
   return (
+    <div className="register-page">
     <Card style={{ width: "80%", margin: "50px auto" }} hoverable>
       <div style={{ display: "flex" }}>
         <Steps>
@@ -70,6 +71,7 @@ const Register = () => {
       {active.which===2 && <Done formData={formData} setformData={setformData} handelStatus={handelStatus}/>}
       {active.which===3 && <Done formData={formData} setformData={setformData} handelStatus={handelStatus}/>}
     </Card>
+    </div>
   );
 };
 

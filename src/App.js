@@ -14,22 +14,25 @@ import SignUp from "./pages/Dashboard/SignUp";
 import SignIn from "./pages/Dashboard/SignIn";
 import Main from "./components/DashboardLayout/Main";
 import "antd/dist/antd.min.css";
-import "./assets/styles/main.css";
-import "./assets/styles/responsive.css";
 import Scout from "./pages/Scout/Scout";
+import Forum from "./pages/DiscussionForum/Forum";
 import { Table } from "antd";
 import TourDetails from "./pages/Tournaments/TourDetails";
+import Login from "./pages/Registration/Login";
+
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route exact path="/tournaments" element={<Tournament/>}/>
-        <Route exact path="/tournaments/:id" element={<TourDetails/>}/>
-        <Route exact path="/scout" element={<Scout/>}/>
+        <Route exact path="/tournaments" element={<Tournament />} />
+        <Route exact path="/tournaments/:id" element={<TourDetails />} />
+        <Route exact path="/scout" element={<Scout />} />
         <Route exact path="/" element={<Home />} />
         <Route exact path="/register" element={<Registration />} />
         <Route exact path="/scout" element={<Scout />} />
+        <Route exact path="/discussion-forums" element={<Forum />} />
+        <Route exact path="/login" element={<Login />} />
         <Route
           exact
           path="/dashboard"

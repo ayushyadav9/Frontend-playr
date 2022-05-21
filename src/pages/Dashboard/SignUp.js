@@ -22,6 +22,8 @@ import {
   InstagramOutlined,
   GithubOutlined,
 } from "@ant-design/icons";
+import "../../assets/styles/main.css";
+import "../../assets/styles/responsive.css";
 
 const { Title } = Typography;
 const { Header, Footer, Content } = Layout;
