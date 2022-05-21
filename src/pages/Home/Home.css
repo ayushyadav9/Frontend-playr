@@ -701,13 +701,13 @@ img {
 
 .feature .feature-illustration {
   position: absolute;
-  top: -32.5px;
-  left: 25px;
+  top: -50px;
+  left: 15px;
   display: grid;
   place-items: center;
-  width: 65px;
-  height: 65px;
-  background: #3b3054;
+  width: 100px;
+  height: 100px;
+  background: #e3daf8;
   border-radius: 50%;
 }
 
@@ -721,7 +721,7 @@ img {
 }
 
 .feature .feature-illustration img {
-  max-width: 50%;
+  max-width: 110%;
 }
 
 .feature .feature-details {

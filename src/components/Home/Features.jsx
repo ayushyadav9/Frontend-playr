@@ -25,57 +25,52 @@ const Features = () => {
         {/* <!-- Advanced Features --> */}
         <div className="more-features">
           <div className="section-header">
-            <h2>Advanced Statistics</h2>
+            <h2>Search for the most suitable profiles</h2>
             <p>
-              Track how your links are performing across the web with our
-              advanced statistics dashboard.
+              Scouts and agents can save time, money and make better decision to find unknown football talent with authentic data and video analysis
             </p>
           </div>
           <div className="more-features-content">
             <div className="feature">
               <div className="feature-illustration">
                 <img
-                  src="./images/Home/icon-brand-recognition.svg"
+                  src="./img1.png"
                   alt="Feature Illustration Icon"
                 />
               </div>
               <div className="feature-details">
-                <h3>Brand Recognition</h3>
+                <h3>Player Recognition</h3>
                 <p>
-                  Boost your brand recognition with each click. Generic links
-                  don’t mean a thing. Branded links help instil confidence in
-                  your content.
+                  Identify players fitting your needs and put them under observation. Scouts and Agents can filter with data and bio to find the next unknown top talent
+                  Based on your filter option, the players are ranked from top to bottom by stats.
                 </p>
               </div>
             </div>
             <div className="feature">
               <div className="feature-illustration">
                 <img
-                  src="./images/Home/icon-detailed-records.svg"
+                  src="./img2.png"
                   alt="Feature Illustration Icon"
                 />
               </div>
               <div className="feature-details">
-                <h3>Detailed Records</h3>
+                <h3>Validate players’ quality</h3>
                 <p>
-                  Gain insights into who is clicking your links. Knowing when
-                  and where people engage with your content helps inform better
-                  decisions.
+                  Watch videos and make sure your selected profiles effectively meet your needs. We simplified the data with info-graphic, rating map and pie charts.
                 </p>
               </div>
             </div>
             <div className="feature">
               <div className="feature-illustration">
                 <img
-                  src="./images/Home/icon-fully-customizable.svg"
+                  src="./img3.png"
                   alt="Feature Illustration Icon"
                 />
               </div>
               <div className="feature-details">
-                <h3>Fully Customizable</h3>
+                <h3>Discussions and Alerts</h3>
                 <p>
-                  Improve brand awareness and content discoverability through
-                  customizable links, supercharging audience engagement.
+                  Be updated with the latest in the field with Discussions and daily Alerts on upcoming major events and tournaments.
                 </p>
               </div>
             </div>
