@@ -24,9 +24,9 @@ function App() {
   return (
     <Router>
       <Routes>
-          <Route exact path="/tournaments" element={<Tournament/>}/>
-          <Route exact path="/tournaments/:id" element={<TourDetails/>}/>
-          <Route exact path="/scout" element={<Scout/>}/>
+        <Route exact path="/tournaments" element={<Tournament/>}/>
+        <Route exact path="/tournaments/:id" element={<TourDetails/>}/>
+        <Route exact path="/scout" element={<Scout/>}/>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/register" element={<Registration />} />
         <Route exact path="/scout" element={<Scout />} />
