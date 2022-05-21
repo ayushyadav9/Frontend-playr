@@ -15,7 +15,7 @@ import ava2 from "../../assets/images/logo-atlassian.svg";
 import ava3 from "../../assets/images/logo-slack.svg";
 import ava4 from "../../assets/images/logo-spotify.svg";
 import ava5 from "../../assets/images/logo-jira.svg";
-
+import {QRCodeSVG} from 'qrcode.react';
 import {
   Row,
   Col,
@@ -30,6 +30,7 @@ import {
   message,
   Typography,
   Table,
+  Modal
 } from "antd";
 
 import {
@@ -37,6 +38,7 @@ import {
   TwitterOutlined,
   InstagramOutlined,
   VerticalAlignTopOutlined,
+  QrcodeOutlined
 } from "@ant-design/icons";
 
 import BgProfile from "../../assets/images/bg-profile.jpg";
@@ -139,37 +141,37 @@ function Profile() {
     },
     {
       img: ava4,
-      Title: "Rajura Football League 4",
+      Title: "Subroto cup",
       level: "District",
-      date: "03/05/2022",
+      date: "03/05/2020",
       result: "Semi-Finals",
     },
     {
       img: ava5,
-      Title: "Rajura Football League 5",
+      Title: "TG Football League 5",
       level: "District",
-      date: "03/05/2022",
+      date: "05/07/2020",
       result: "Winners",
     },
     {
       img: ava1,
-      Title: "Rajura Football League",
-      level: "District",
-      date: "03/05/2022",
+      Title: "Santosh Trophy",
+      level: "National",
+      date: "12/09/2021",
       result: "Semi-Finals",
     },
     {
       img: ava2,
-      Title: "Rajura Football League 2",
-      level: "District",
-      date: "03/05/2022",
+      Title: "IFA Shield Cup",
+      level: "State",
+      date: "29/11/2021",
       result: "Winners",
     },
     {
       img: ava3,
-      Title: "Rajura Football League 3",
+      Title: "Federation Football League 3",
       level: "District",
-      date: "03/05/2022",
+      date: "03/01/2022",
       result: "Qualifiers",
     },
     {
@@ -353,8 +355,29 @@ function Profile() {
     },
   ];
 
+  const [QRVisible, setQRVisible] = useState(false)
+  const openQR = () => {
+    setQRVisible(!QRVisible);
+  }
+
   return (
     <>
+      <div>
+        <Modal title="Scan Me"
+          visible={QRVisible}
+          onCancel={openQR}
+          footer={[]}
+          width={350}>
+          <div style={{marginLeft:110}}>
+            <Avatar size={74} shape="round" src={profilavatar} />
+            <p>Sarah Jacob</p>
+            <p>Id: 292180</p>
+          </div>
+          <QRCodeSVG style={{marginLeft:25}} size={250} value="http://localhost:3000/profile"/><br/>
+          <p style={{marginLeft:21}}>Any one with this QR can view your Profile</p>
+        </Modal>
+      </div>
+
       <div
         className="profile-nav-bg"
         style={{ backgroundImage: "url(" + BgProfile + ")" }}
@@ -371,7 +394,10 @@ function Profile() {
 
                 <div className="avatar-info">
                   <h4 className="font-semibold m-0">Sarah Jacob</h4>
-                  <p>CEO / Co-Founder</p>
+                  <p>Footballer<br/>National Level</p>
+                </div>
+                <div className="avatar-info">
+                  <QrcodeOutlined style={{ fontSize: '60px' }} onClick={openQR} />
                 </div>
               </Avatar.Group>
             </Col>
@@ -538,15 +564,15 @@ function Profile() {
         bordered={false}
         className="criclebox tablespace mb-24"
         title="All Tournaments"
-        // extra={
-        //   <>
-        //     <Radio.Group onChange={onChange} defaultValue="all">
-        //       <Radio.Button value="all">All</Radio.Button>
-        //       <Radio.Button value="online">ONLINE</Radio.Button>
-        //       <Radio.Button value="store">STORES</Radio.Button>
-        //     </Radio.Group>
-        //   </>
-        // }
+      // extra={
+      //   <>
+      //     <Radio.Group onChange={onChange} defaultValue="all">
+      //       <Radio.Button value="all">All</Radio.Button>
+      //       <Radio.Button value="online">ONLINE</Radio.Button>
+      //       <Radio.Button value="store">STORES</Radio.Button>
+      //     </Radio.Group>
+      //   </>
+      // }
       >
         <div className="ant-list-box table-responsive">
           <Table
