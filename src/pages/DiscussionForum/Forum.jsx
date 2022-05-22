@@ -13,6 +13,7 @@ import {
 import { Modal, Card } from "antd";
 import CardHeader from "../../components/DiscussionForum/CardHeader";
 import "./Forum.css";
+import Header from "../../components/Home/Header"
 
 const topPosts = [
   {
@@ -114,6 +115,8 @@ const Forum = () => {
   };
 
   return (
+    <>
+    <Header/>
     <div className="forum">
       <Card
         title={
@@ -330,6 +333,7 @@ const Forum = () => {
         />
       </Card>
     </div>
+    </>
   );
 };
 

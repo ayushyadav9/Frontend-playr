@@ -83,17 +83,17 @@ const Personal = ({ formData, setformData, handelStatus }) => {
               required
             />
           </Form.Item>
-          {/* <Form.Item label="PAN Number" style={{ width: "45%",marginLeft:"55px",marginTop:"-23px"}}>
+          <Form.Item label="Password" style={{ width: "45%",marginLeft:"55px",marginTop:"-23px"}}>
           <Input
             type="text"
-            placeholder="PAN Number"
-            value={formData.PANno}
+            placeholder="Password"
+            value={formData.password}
             onChange={(e) =>
-              setformData({ ...formData, PANno: e.target.value })
+              setformData({ ...formData, password: e.target.value })
             }
             required
           />
-        </Form.Item> */}
+        </Form.Item>
         </Row>
 
         <Space

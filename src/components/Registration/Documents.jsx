@@ -17,9 +17,11 @@ const Documents = ({ formData, setformData, handelStatus }) => {
         }
         setformData({
           ...formData,
-          birthCertificateIPFS: result[0].path,
-          aadharIPFS: result[1].path,
-          profilePhotoIPFS: result[2].path
+          docs: {
+            birthCertificateIPFS: result[0].path,
+            aadharIPFS: result[1].path,
+            profilePhotoIPFS: result[2].path
+          }  
         });
         setisLoading(false);
         handelStatus(2);
