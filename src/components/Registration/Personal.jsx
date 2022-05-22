@@ -85,7 +85,7 @@ const Personal = ({ formData, setformData, handelStatus }) => {
           </Form.Item>
           <Form.Item label="Password" style={{ width: "45%",marginLeft:"55px",marginTop:"-23px"}}>
           <Input
-            type="text"
+            type="password"
             placeholder="Password"
             value={formData.password}
             onChange={(e) =>

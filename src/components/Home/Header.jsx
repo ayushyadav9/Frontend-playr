@@ -53,6 +53,9 @@ const Header = () => {
             <Link to="/discussion-forums" replace>
               Discussion Forums
             </Link>
+            <Link to="/organize" replace>
+              Organizer
+            </Link>
           </div>
           {userData == null ? (
             <div className="nav-buttons">
