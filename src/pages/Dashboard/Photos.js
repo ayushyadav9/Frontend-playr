@@ -3,11 +3,11 @@ import { Row, Col, Card } from "antd";
 // import { useState } from "react";
 import "../../assets/styles/main.css";
 import "../../assets/styles/responsive.css";
-import fb1 from "../../assets/images/fb1.jpg";
-import fb2 from "../../assets/images/fb2.jpg";
-import fb3 from "../../assets/images/fb3.jpg";
-import fb4 from "../../assets/images/fb4.jpg";
-import fb5 from "../../assets/images/fb5.jpg";
+// import fb1 from "../../assets/images/fb1.jpg";
+// import fb2 from "../../assets/images/fb2.jpg";
+// import fb3 from "../../assets/images/fb3.jpg";
+// import fb4 from "../../assets/images/fb4.jpg";
+// import fb5 from "../../assets/images/fb5.jpg";
 const { Meta } = Card;
 
 function Photos() {
@@ -65,7 +65,7 @@ function Photos() {
             {mediaRow.map((phot) => (
               <Col span={8}>
                 <Card
-                  style={{ width: 300,height: 470 }}
+                  style={{ width: 300, height: 470 }}
                   cover={<img alt="example" src={phot.src} />}
                   // actions={[
                   //   <SettingOutlined key="setting" />,
