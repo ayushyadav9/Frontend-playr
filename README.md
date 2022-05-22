@@ -35,6 +35,11 @@ Create a solution that not only identifies a problem area for Grassroots sports 
 <br>
 <br>
 
+## **Our Solution**
+A platform that unifies the players, scouts, and sports agencies and streamlines the entire process.
+<br/>
+<br/>
+
 <!-- Key Features -->
 ## **Key Features**
 <br>
@@ -52,26 +57,22 @@ Create a solution that not only identifies a problem area for Grassroots sports 
 <ul>
   <li>All players will be registered on our Central Database. </li>
   <li>Getting data and performance metrics of all games and players.  </li>
-  <li>Find the right players according to needs.</li>
+  <li>Centralized records of data</li>
+  <li>Digitization of the entire process. </li>
 </ul>  
 
-**Central Sports Database**
+**Scouting & Rich Analytics Dashboard**
 
 <ul>
-  <li>All players will be registered on our Central Database. </li>
-  <li>Performance, Matches and Tournaments data indexing. </li>
   <li>Find the right players according to needs.</li>
+  <li>Rich filter options.</li>
+  <li>Performance tracking.</li>
+  <li>Player Rating. </li>
+  <li>Tournament History.</li>
 </ul>  
 
 <br>
 <br>
-
-## **Our Solution**
-A platform that unifies the players, scouts, and sports agencies and streamlines the entire process. 
-
-Moreover, in decentralized  vKYC platform  the vKYC is done once and is stored in a blockchain and the member banks share this data for their KYC needs.
-<br/>
-<br/>
 
 
 
@@ -79,57 +80,33 @@ Moreover, in decentralized  vKYC platform  the vKYC is done once and is stored i
 <!-- USAGE EXAMPLES -->
 ## **Screenshots**
 <div align="center" ><br/>
-Client Pannel<br/><hr width=600/>
-  <img src="./images/4.png" width=600 ><br/><br/>
-Video KYC by Bank Client<br/><hr width=600/>
-  <img src="./images/2.png" width=600 ><br/><br/>
-Accessing KYC history<br/><hr width=600/>
-  <img src="./images/3.png" width=600><br/>
-Adding remark and Acceping/Rejection of KYC request<br/><hr width=600/>
-  <img src="./images/1.png" width=600><br/>
+ 
+Website Landing Page & Player Dashboard<hr width=500/>  
+  <img src="./gifs/land.gif" width=500>  <img src="./gifs/dash-1.gif" width=500 ><br/><br/>
+  
+  
+  
+  
+  
+Player Profile & Scouting Portal<br/><hr width=500/>
+  <img src="./gifs/dash-2.gif" width=500 ><img src="./gifs/scout.gif" width=500><br/><br/>
+  
+  
+  
+  
+  
+Discussion Forum & Organizers Portal<br/><hr width=600/>
+  <img src="./gifs/discuss.gif" width=500><img src="./gifs/organize.gif" width=500><br/>
 </div>
 <br/>
 
 ### **Tech Stack used**
-
-* [Ethereum Smart Contracts](https://ethereum.org/en/developers/docs/smart-contracts/)
+  
 * [InterPlanetary File System (IPFS)](https://ipfs.io/)
-* [Solidity](https://docs.soliditylang.org/en/v0.8.11/)
 * [React.js](https://reactjs.org/)
+* [Express.js](https://expressjs.com/)
 * [Node.js](https://nodejs.org/)
-* [Web3.js](https://web3js.readthedocs.io/en/v1.5.2/getting-started.html)
 * [MongoDb](https://www.mongodb.com/)
-* [Ganache GUI](https://trufflesuite.com/ganache/)
-* [MetaMask](https://metamask.io/)
-
 
 <br/>
-
-## Step 1. Clone the project
-`git clone https://github.com/ayushyadav9/eKYC-Portal`
-
-## Step 2. Install dependencies
-```
-$ cd eKYC-Portal
-$ npm install
-```
-## Step 3. Start Ganache
-Open the Ganache GUI client that you downloaded and installed. This will start your local blockchain instance. You can also use other local blockchains.
-
-## Step 4. Compile & Deploy Election Smart Contract
-`$ truffle migrate --reset`
-You must migrate the verification smart contract each time your restart ganache.
-
-## Step 5. Configure Metamask
-- Unlock Metamask
-- Connect metamask to your local Etherum blockchain provided by Ganache.
-- Import an account provided by ganache.
-
-## Step 6. Run the Front End Application
-`$ npm start`
-Visit this URL in your browser: http://localhost:3000
-
-## Step 6. Run the Back End Application
-`$ npm run server`
-Visit this URL in your browser: http://localhost:5000
 
