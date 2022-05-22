@@ -82,21 +82,21 @@ A platform that unifies the players, scouts, and sports agencies and streamlines
 <div align="center" ><br/>
  
 Website Landing Page & Player Dashboard<hr width=500/>  
-  <img src="./gifs/land.gif" width=500>  <img src="./gifs/dash-1.gif" width=500 ><br/><br/>
+  <img src="./gifs/land.gif" width=450>  <img src="./gifs/dash-1.gif" width=450 ><br/><br/>
   
   
   
   
   
 Player Profile & Scouting Portal<br/><hr width=500/>
-  <img src="./gifs/dash-2.gif" width=500 ><img src="./gifs/scout.gif" width=500><br/><br/>
+  <img src="./gifs/dash-2.gif" width=450 ><img src="./gifs/scout.gif" width=450><br/><br/>
   
   
   
   
   
 Discussion Forum & Organizers Portal<br/><hr width=600/>
-  <img src="./gifs/discuss.gif" width=500><img src="./gifs/organize.gif" width=500><br/>
+  <img src="./gifs/discuss.gif" width=450><img src="./gifs/organize.gif" width=450><br/>
 </div>
 <br/>
 
