@@ -41,8 +41,7 @@ const Features = () => {
               <div className="feature-details">
                 <h3>Player Recognition</h3>
                 <p>
-                  Identify players fitting your needs and put them under observation. Scouts and Agents can filter with data and bio to find the next unknown top talent
-                  Based on your filter option, the players are ranked from top to bottom by stats.
+                  Identify players fitting your needs and put them under observation. 
                 </p>
               </div>
             </div>
