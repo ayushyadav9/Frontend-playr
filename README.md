@@ -12,53 +12,67 @@
 
 <div align="center">
     <h1>Team: Disruptors</H1>
-    <H3>Ctrl Alt Debt  : 2022 </h3>
-    <h3> Theme: vKYC Chain for a Banking Consortium</h3>
+    <H3>Hack For Sport : 2022 </h3>
+    <h3> Theme: Grassroots</h3>
     <h3> Team Members: <strong>Sushil Adwe | Chirag Hegde | Ayush Yadav</strong></h3>
     <h3> Indian Institute of Technology, Guwahati </h3>
 </div>
 <br/>
 
-**Demo Website** : [https://vkyc.netlify.app/](https://vkyc.netlify.app/)<br/>
-**Demo Video** : [https://youtu.be/rUyT8FlGMnQ](https://youtu.be/rUyT8FlGMnQ)
+**Demo Website** : [https://playr-v1.netlify.app/](https://playr-v1.netlify.app/)<br/>
 
 
 <!-- ABOUT THE PROJECT -->
 
 ## **Problem Statement**
-Covid-19 Pandemic has triggered a new innovation in the field of KYC called Video KYC (Know Your Customer) - vKYC. Typically a vKYC is done via a weblink which asks the applicant to upload a few digital documents link PAN Card, Aadhaar along with selfie pictures and location of the applicant through GPS & IP address. This is followed by an employee of the financial institution calling the application over a video call to verify the data and documents. However, this process is done by each institution in silos for which the applicant ends up doing vKYC for each institution separately.
+Build a solution that can further enhance the grassroots parameters such as prevention of age fraud, enhancing player performance, talent scouting for all sports nationally, etc.
 
-Imagine a group of N banks coming together and forming a consortium who agrees to have the same vKYC for all the member banks. They want to develop a blockchain based vKYC platform where the vKYC is done once and is stored in a blockchain and the member banks share this data for their KYC needs. Apply your innovations and develop a blockchain based vKYC platform.
-<br>
-<br>
+**Overview**
 
-<!-- Key Features -->
-## **Key Features**
-<br>
-<ul>
-  <li>Client and Bank Registration</li>
-  <li>Crypto Wallet-less UI for Clients</li>
-  <li>Additional Layer of Authorisation Protecting Client Data</li>
-  <li>Admin Panel</li>
-  <li>Decentralized IPFS for Documents</li>
-  <li>Detailed User Dashboard</li>
-  <li>Entire Customer KYC History Visualisation</li>
-  <li>Geo-tagging</li>
-  <li>In-built Video KYC Platform</li>
-</ul>  
+Grassroot sports are extremely important to any developing sporting nation. It is a foundation for sport for life and for high performance sport but, more importantly, when delivered well it creates immense value and develops more talents for the country in the years to come. One must recognize that in order to achieve its strategic outcomes, more emphasis must be given on the delivery of innovative sports program at the junior levels. Grassroots sports in India, however, is plagued with a lot of challenges. How to enhance player performance at junior levels, prevent age fraud, undertaking impactful talent scouting in a country this large etc. to name a few.  
+
+Create a solution that not only identifies a problem area for Grassroots sports development in India but also lays out a methodology to overcome the same. 
 <br>
 <br>
 
 ## **Our Solution**
-Conventional banking and financial institutions spend a substantial part of customer acquisition costs and isolated KYC databases and try to keep them updated and accurate. The overall cost of managing the silo KYC per customer increases because of a lack of transparency, poor control, mistrust, and data duplication. ​
-
-To overcome the problems caused in traditional system we designed a new, efficient and effective KYC processes  which makes use of highly decentralized technologies such as InterPlanetary File System (IPFS) and Ethereum blockchain that allows, through the suggested developed smart contracts, the implementation of multi-party KYC processes on top of blockchains.
-
-Our solution presents a unique trust management platform based on self-sovereign and decentralizes Video-Know-Your-Customer (vKYC) model to enhance customer privacy through consent-based access, featuring regulator governance and helping banks to use trusted and accurate customer data while reducing the customer acquisition costs.​
-
-Moreover, in decentralized  vKYC platform  the vKYC is done once and is stored in a blockchain and the member banks share this data for their KYC needs.
+A platform that unifies the players, scouts, and sports agencies and streamlines the entire process.
 <br/>
 <br/>
+
+<!-- Key Features -->
+## **Key Features**
+<br>
+
+**Central Sports Database**
+
+<ul>
+  <li>All players will be registered on our Central Database. </li>
+  <li>Performance, Matches and Tournaments data indexing. </li>
+  <li>Find the right players according to needs.</li>
+</ul>  
+
+**Integration with Tournaments**
+
+<ul>
+  <li>All players will be registered on our Central Database. </li>
+  <li>Getting data and performance metrics of all games and players.  </li>
+  <li>Centralized records of data</li>
+  <li>Digitization of the entire process. </li>
+</ul>  
+
+**Scouting & Rich Analytics Dashboard**
+
+<ul>
+  <li>Find the right players according to needs.</li>
+  <li>Rich filter options.</li>
+  <li>Performance tracking.</li>
+  <li>Player Rating. </li>
+  <li>Tournament History.</li>
+</ul>  
+
+<br>
+<br>
 
 
 
@@ -66,57 +80,33 @@ Moreover, in decentralized  vKYC platform  the vKYC is done once and is stored i
 <!-- USAGE EXAMPLES -->
 ## **Screenshots**
 <div align="center" ><br/>
-Client Pannel<br/><hr width=600/>
-  <img src="./images/4.png" width=600 ><br/><br/>
-Video KYC by Bank Client<br/><hr width=600/>
-  <img src="./images/2.png" width=600 ><br/><br/>
-Accessing KYC history<br/><hr width=600/>
-  <img src="./images/3.png" width=600><br/>
-Adding remark and Acceping/Rejection of KYC request<br/><hr width=600/>
-  <img src="./images/1.png" width=600><br/>
+ 
+Website Landing Page & Player Dashboard<hr width=500/>  
+  <img src="./gifs/land.gif" width=500>  <img src="./gifs/dash-1.gif" width=500 ><br/><br/>
+  
+  
+  
+  
+  
+Player Profile & Scouting Portal<br/><hr width=500/>
+  <img src="./gifs/dash-2.gif" width=500 ><img src="./gifs/scout.gif" width=500><br/><br/>
+  
+  
+  
+  
+  
+Discussion Forum & Organizers Portal<br/><hr width=600/>
+  <img src="./gifs/discuss.gif" width=500><img src="./gifs/organize.gif" width=500><br/>
 </div>
 <br/>
 
 ### **Tech Stack used**
-
-* [Ethereum Smart Contracts](https://ethereum.org/en/developers/docs/smart-contracts/)
+  
 * [InterPlanetary File System (IPFS)](https://ipfs.io/)
-* [Solidity](https://docs.soliditylang.org/en/v0.8.11/)
 * [React.js](https://reactjs.org/)
+* [Express.js](https://expressjs.com/)
 * [Node.js](https://nodejs.org/)
-* [Web3.js](https://web3js.readthedocs.io/en/v1.5.2/getting-started.html)
 * [MongoDb](https://www.mongodb.com/)
-* [Ganache GUI](https://trufflesuite.com/ganache/)
-* [MetaMask](https://metamask.io/)
-
 
 <br/>
-
-## Step 1. Clone the project
-`git clone https://github.com/ayushyadav9/eKYC-Portal`
-
-## Step 2. Install dependencies
-```
-$ cd eKYC-Portal
-$ npm install
-```
-## Step 3. Start Ganache
-Open the Ganache GUI client that you downloaded and installed. This will start your local blockchain instance. You can also use other local blockchains.
-
-## Step 4. Compile & Deploy Election Smart Contract
-`$ truffle migrate --reset`
-You must migrate the verification smart contract each time your restart ganache.
-
-## Step 5. Configure Metamask
-- Unlock Metamask
-- Connect metamask to your local Etherum blockchain provided by Ganache.
-- Import an account provided by ganache.
-
-## Step 6. Run the Front End Application
-`$ npm start`
-Visit this URL in your browser: http://localhost:3000
-
-## Step 6. Run the Back End Application
-`$ npm run server`
-Visit this URL in your browser: http://localhost:5000
 
