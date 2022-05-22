@@ -22,37 +22,37 @@ const { Meta } = Card;
 function Photos() {
   const inputArray = [
     {
-      src: "https://cdn3.iconfinder.com/data/icons/instagram-18/512/199_Instagram_Plus_Sets_Upload-512.png",
+      src: "./upload2.png",
       alt: "example",
       title: "Upload",
       description: "Please upload a photo or video",
     },
     {
-      src: "https://joeschmoe.io/api/v1/random",
+      src: "./p2.jpg",
       alt: "example",
       title: "Title",
       description: "Description",
     },
     {
-      src: "https://joeschmoe.io/api/v1/random",
+      src: "./p3.jpg",
       alt: "example",
       title: "Title",
       description: "Description",
     },
     {
-      src: "https://joeschmoe.io/api/v1/random",
+      src: "./p4.jpg",
       alt: "example",
       title: "Title",
       description: "Description",
     },
     {
-      src: "https://joeschmoe.io/api/v1/random",
+      src: "./p5.jpg",
       alt: "example",
       title: "Title",
       description: "Description",
     },
     {
-      src: "https://joeschmoe.io/api/v1/random",
+      src: "./p6.jpg",
       alt: "example",
       title: "Title",
       description: "Description",
@@ -74,7 +74,7 @@ function Photos() {
             {mediaRow.map((phot) => (
               <Col span={8}>
                 <Card
-                  style={{ width: 300 }}
+                  style={{ width: 300,height: 470 }}
                   cover={<img alt="example" src={phot.src} />}
                   // actions={[
                   //   <SettingOutlined key="setting" />,
