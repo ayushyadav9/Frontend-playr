@@ -200,7 +200,7 @@ function Sidenav({ color }) {
             >
               {photos}
             </span>
-            <span className="label">Photos</span>
+            <span className="label">Player Media</span>
           </NavLink>
         </Menu.Item>
       </Menu>
