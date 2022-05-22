@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Result, Button, Spin,message } from "antd";
+import { Result, Button, Spin, message } from "antd";
 // import { baseURL } from "../../../api";
 import { useNavigate } from "react-router-dom";
 import { baseURL } from "../../api";
@@ -12,34 +12,34 @@ const Done = ({ formData }) => {
   useEffect(() => {
     if (status === 0) {
       setStatus(1);
-      formData.role="player"
+      formData.role = "player";
       console.log(formData);
-        fetch(`${baseURL}/auth/register`, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        })
-          .then((res) => res.json())
-          .then((result, err) => {
-            if (err) {
-              console.log(err);
-              message.error("Something went wrong");
-              return;
-            }
-            if (result.success) {
-              message.success(result.message);
-              localStorage.setItem(`Token`, result.data.token);
-                navigate("/")
-            } else {
-              message.info(result.message);
-            }
-            console.log(result);
-          });
-      } 
-      //handelStatus(3);
-  }, []);
+      fetch(`${baseURL}/auth/register`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      })
+        .then((res) => res.json())
+        .then((result, err) => {
+          if (err) {
+            console.log(err);
+            message.error("Something went wrong");
+            return;
+          }
+          if (result.success) {
+            message.success(result.message);
+            localStorage.setItem(`Token`, result.data.token);
+            navigate("/");
+          } else {
+            message.info(result.message);
+          }
+          console.log(result);
+        });
+    }
+    //handelStatus(3);
+  }, [formData, navigate, status]);
 
   //After Saving data set status to 1
   //And set handel status to 3;
