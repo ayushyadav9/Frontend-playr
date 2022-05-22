@@ -1,70 +1,112 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+  <h1>PlayR</h1></br>
+<h3>An Unified platform for Players, Scouts and Sports Agencies </h3>
+</div>
+<br>
 
-## Available Scripts
+<p align="center">
+    <img src="https://he-s3.s3.amazonaws.com/media/cache/96/a4/96a4bbf123bbec3cd036143aaa9d38de.png" alt="Logo" width="150">        
+</p>
 
-In the project directory, you can run:
 
-### `npm start`
+<div align="center">
+    <h1>Team: Disruptors</H1>
+    <H3>Hack For Sport : 2022 </h3>
+    <h3> Theme: Grassroots</h3>
+    <h3> Team Members: <strong>Sushil Adwe | Chirag Hegde | Ayush Yadav</strong></h3>
+    <h3> Indian Institute of Technology, Guwahati </h3>
+</div>
+<br/>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Demo Website** : [https://playr-v1.netlify.app/](https://playr-v1.netlify.app/)<br/>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+<!-- ABOUT THE PROJECT -->
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## **Problem Statement**
+Build a solution that can further enhance the grassroots parameters such as prevention of age fraud, enhancing player performance, talent scouting for all sports nationally, etc.
 
-### `npm run build`
+**Overview**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Grassroot sports are extremely important to any developing sporting nation. It is a foundation for sport for life and for high performance sport but, more importantly, when delivered well it creates immense value and develops more talents for the country in the years to come. One must recognize that in order to achieve its strategic outcomes, more emphasis must be given on the delivery of innovative sports program at the junior levels. Grassroots sports in India, however, is plagued with a lot of challenges. How to enhance player performance at junior levels, prevent age fraud, undertaking impactful talent scouting in a country this large etc. to name a few.  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Create a solution that not only identifies a problem area for Grassroots sports development in India but also lays out a methodology to overcome the same. 
+<br>
+<br>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## **Our Solution**
+A platform that unifies the players, scouts, and sports agencies and streamlines the entire process.
+<br/>
+<br/>
 
-### `npm run eject`
+<!-- Key Features -->
+## **Key Features**
+<br>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Central Sports Database**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<ul>
+  <li>All players will be registered on our Central Database. </li>
+  <li>Performance, Matches and Tournaments data indexing. </li>
+  <li>Find the right players according to needs.</li>
+</ul>  
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**Integration with Tournaments**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<ul>
+  <li>All players will be registered on our Central Database. </li>
+  <li>Getting data and performance metrics of all games and players.  </li>
+  <li>Centralized records of data</li>
+  <li>Digitization of the entire process. </li>
+</ul>  
 
-## Learn More
+**Scouting & Rich Analytics Dashboard**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<ul>
+  <li>Find the right players according to needs.</li>
+  <li>Rich filter options.</li>
+  <li>Performance tracking.</li>
+  <li>Player Rating. </li>
+  <li>Tournament History.</li>
+</ul>  
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<br>
+<br>
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<!-- USAGE EXAMPLES -->
+## **Screenshots**
+<div align="center" ><br/>
+ 
+Website Landing Page & Player Dashboard<hr width=500/>  
+  <img src="./gifs/land.gif" width=450>  <img src="./gifs/dash-1.gif" width=450 ><br/><br/>
+  
+  
+  
+  
+  
+Player Profile & Scouting Portal<br/><hr width=500/>
+  <img src="./gifs/dash-2.gif" width=450 ><img src="./gifs/scout.gif" width=450><br/><br/>
+  
+  
+  
+  
+  
+Discussion Forum & Organizers Portal<br/><hr width=600/>
+  <img src="./gifs/discuss.gif" width=450><img src="./gifs/organize.gif" width=450><br/>
+</div>
+<br/>
 
-### Making a Progressive Web App
+### **Tech Stack used**
+  
+* [InterPlanetary File System (IPFS)](https://ipfs.io/)
+* [React.js](https://reactjs.org/)
+* [Express.js](https://expressjs.com/)
+* [Node.js](https://nodejs.org/)
+* [MongoDb](https://www.mongodb.com/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<br/>
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
