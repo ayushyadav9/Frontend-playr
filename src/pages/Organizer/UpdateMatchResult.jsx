@@ -1,28 +1,18 @@
-import { useState } from "react";
-import { UploadOutlined, InboxOutlined } from "@ant-design/icons";
+import { UploadOutlined } from "@ant-design/icons";
 import { MinusCircleOutlined, PlusOutlined } from "@ant-design/icons";
 import {
   Card,
   Form,
   Input,
-  InputNumber,
-  Cascader,
   Select,
-  Row,
-  Col,
-  Checkbox,
   Button,
-  AutoComplete,
-  DatePicker,
   Upload,
-  Typography,
   Divider,
   TimePicker,
   Space,
 } from "antd";
 
 const { Option } = Select;
-const { RangePicker } = DatePicker;
 
 const layout = {
   labelCol: {
@@ -57,52 +47,6 @@ const UpdateMatchResult = () => {
   };
   const onReset = () => {
     form.resetFields();
-  };
-
-  const prefixSelector = (
-    <Form.Item name="prefix" noStyle>
-      <Select
-        style={{
-          width: 70,
-        }}
-      >
-        <Option value="86">+86</Option>
-        <Option value="87">+87</Option>
-      </Select>
-    </Form.Item>
-  );
-  const suffixSelector = (
-    <Form.Item name="suffix" noStyle>
-      <Select
-        style={{
-          width: 70,
-        }}
-      >
-        <Option value="USD">$</Option>
-        <Option value="CNY">¥</Option>
-      </Select>
-    </Form.Item>
-  );
-  const [autoCompleteResult, setAutoCompleteResult] = useState([]);
-
-  const onWebsiteChange = (value) => {
-    if (!value) {
-      setAutoCompleteResult([]);
-    } else {
-      setAutoCompleteResult(
-        [".com", ".org", ".net"].map((domain) => `${value}${domain}`)
-      );
-    }
-  };
-
-  const rangeConfig = {
-    rules: [
-      {
-        type: "array",
-        required: true,
-        message: "Please select time!",
-      },
-    ],
   };
 
   const normFile = (e) => {

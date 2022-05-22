@@ -27,7 +27,7 @@ const Header = () => {
           console.log(userData);
         });
     }
-  }, []);
+  }, [userData]);
 
   const handelLogOut = () => {
     localStorage.removeItem("Token");

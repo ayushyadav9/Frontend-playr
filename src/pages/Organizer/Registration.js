@@ -1,25 +1,10 @@
-import React, { useState,useEffect } from "react";
-import { Layout, Menu, Button, Typography, Card, Form, Input, Checkbox, Modal, Row, Col } from "antd";
-import logo1 from "../../assets/images/logos-facebook.svg";
-import logo2 from "../../assets/images/logo-apple.svg";
-import logo3 from "../../assets/images/Google__G__Logo.svg.png";
+import React, { useState, useEffect } from "react";
+import { Button, Card, Form, Input, Modal } from "antd";
 import { QrReader } from "react-qr-reader";
-import { Link } from "react-router-dom";
-import {
-  DribbbleOutlined,
-  TwitterOutlined,
-  InstagramOutlined,
-  GithubOutlined,
-  UserOutlined,
-  NumberOutlined,
-  TeamOutlined
-} from "@ant-design/icons";
+import { UserOutlined, NumberOutlined, TeamOutlined } from "@ant-design/icons";
 import "../../assets/styles/main.css";
 import "../../assets/styles/responsive.css";
-import "./Registration.css"
-
-const { Title } = Typography;
-const { Header, Footer, Content } = Layout;
+import "./Registration.css";
 const { Meta } = Card;
 
 const dummyData = {
@@ -27,39 +12,34 @@ const dummyData = {
   name: "",
   age: "",
   jerseyNumber: "",
-  team: ""
+  team: "",
 };
 
-const Registration = (props) => {
-
+const Registration = () => {
   const [data, setData] = useState(dummyData);
-
-  const [isLoading, setisLoading] = useState(false);
   const [QRScannerVisible, setQRScannerVisible] = useState(false);
   const openQRScanner = () => {
     setQRScannerVisible(!QRScannerVisible);
   };
 
-  const onFinish = values => {
-    
+  const onFinish = (values) => {
     if (!data.id) {
       values.id = 292182;
       countDown(values.id);
-    }
-    else values = data;
+    } else values = data;
     //Final Submitted data here in values
     console.log(values);
-    setData(dummyData)
-  }
+    setData(dummyData);
+  };
 
-  const onScan = values => {
+  const onScan = (values) => {
     console.log(values);
     setData(values);
-  }
+  };
 
-  const onFinishFailed = errorInfo => {
-    console.log('Failed:', errorInfo);
-  }
+  const onFinishFailed = (errorInfo) => {
+    console.log("Failed:", errorInfo);
+  };
 
   function countDown(playerId) {
     let secondsToGo = 6;
@@ -83,11 +63,11 @@ const Registration = (props) => {
   useEffect(() => {
     form.setFieldsValue({
       name: data.name,
-      age:data.age,
-      jerseyNumber:data.jerseyNumber,
-      team:data.team
+      age: data.age,
+      jerseyNumber: data.jerseyNumber,
+      team: data.team,
     });
-  }, [data]);
+  }, [form, data]);
 
   return (
     <>
@@ -95,8 +75,8 @@ const Registration = (props) => {
         <QrReader
           onResult={(result, error) => {
             if (!!result) {
-              const playerData = JSON.parse(result.text)
-              onScan(playerData)
+              const playerData = JSON.parse(result.text);
+              onScan(playerData);
               openQRScanner();
             }
             if (!!error) {
@@ -107,23 +87,19 @@ const Registration = (props) => {
         />
       </Modal>
 
-
       <div className="login-page">
         <div className="login-box">
           <div className="illustration-wrapper">
-
             <div>
               <Card
                 onClick={openQRScanner}
-                className={'card-notselected'}
+                className={"card-notselected"}
                 hoverable
-
                 cover={<img alt="Player" src="./scan2.png" />}
               >
                 <Meta title="Apply Fast Scan a QR" />
               </Card>
             </div>
-
           </div>
           <div>OR</div>
           <Form
@@ -138,7 +114,7 @@ const Registration = (props) => {
 
             <Form.Item
               name="name"
-              rules={[{ required: true, message: 'Enter your name!' }]}
+              rules={[{ required: true, message: "Enter your name!" }]}
             >
               <Input
                 placeholder="name"
@@ -149,18 +125,14 @@ const Registration = (props) => {
 
             <Form.Item
               name="age"
-              rules={[{ required: true, message: 'Enter your age!' }]}
+              rules={[{ required: true, message: "Enter your age!" }]}
             >
-              <Input
-                placeholder="Age"
-                value={data.age}
-                prefix={<UserOutlined />}
-              />
+              <Input placeholder="Age" value={data.age} prefix={<UserOutlined />} />
             </Form.Item>
 
             <Form.Item
               name="jerseyNumber"
-              rules={[{ required: true, message: 'Enter your jersey Number!' }]}
+              rules={[{ required: true, message: "Enter your jersey Number!" }]}
             >
               <Input
                 value={data.jerseyNumber}
@@ -170,8 +142,8 @@ const Registration = (props) => {
             </Form.Item>
 
             <Form.Item
-              name="team"              
-              rules={[{ required: true, message: 'Enter your Team Name!' }]}
+              name="team"
+              rules={[{ required: true, message: "Enter your Team Name!" }]}
             >
               <Input
                 placeholder="Team Name"
@@ -181,26 +153,20 @@ const Registration = (props) => {
             </Form.Item>
 
             <Form.Item>
-              <Button type="primary" htmlType="submit" loading={isLoading} className="login-form-button">
+              <Button type="primary" htmlType="submit" className="login-form-button">
                 Register
               </Button>
             </Form.Item>
-            <div style={{ textAlign: "center" }}>If you don't have a PlayR account you will be given a dummy account<br />
-              <span>Note : You should activate dummy account within 48 hours of registration</span></div>
+            <div style={{ textAlign: "center" }}>
+              If you don't have a PlayR account you will be given a dummy account
+              <br />
+              <span>
+                Note : You should activate dummy account within 48 hours of registration
+              </span>
+            </div>
           </Form>
-
         </div>
       </div>
-
-
-
-
-
-
-
-
-
-
     </>
   );
 };
