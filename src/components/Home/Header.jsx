@@ -4,7 +4,7 @@ import { baseURL } from "../../api";
 
 const Header = () => {
   const [userData, setUserData] = useState(null);
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   useEffect(() => {
     if (localStorage.getItem("Token")) {
       fetch(`${baseURL}/auth/getDetails`, {
@@ -29,10 +29,10 @@ const Header = () => {
     }
   }, []);
 
-  const handelLogOut = ()=>{
-    localStorage.removeItem("Token")
-    navigate("./login")
-  }
+  const handelLogOut = () => {
+    localStorage.removeItem("Token");
+    navigate("./login");
+  };
 
   return (
     <header className="header">
@@ -44,11 +44,17 @@ const Header = () => {
         </div>
         <nav className="main-navgation flex-between flex-ver-top">
           <div className="nav-links">
-            <Link to="scout">Scouting</Link>
-            <Link to="tournaments">Tournaments</Link>
-            <Link to="discussion-forums">Discussion Forums</Link>
+            <Link to="/scout" replace>
+              Scouting
+            </Link>
+            <Link to="/tournaments" replace>
+              Tournaments
+            </Link>
+            <Link to="/discussion-forums" replace>
+              Discussion Forums
+            </Link>
           </div>
-          {userData==null ? (
+          {userData == null ? (
             <div className="nav-buttons">
               <Link to="/login" className="log-in">
                 Login

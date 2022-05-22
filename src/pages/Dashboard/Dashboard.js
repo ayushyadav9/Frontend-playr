@@ -165,7 +165,7 @@ function Home() {
     },
     {
       today: "State",
-      title: "India",
+      title: "Maharashtra",
       // persent: "10%",
       // icon: cart,
       // bnb: "bnb2",
