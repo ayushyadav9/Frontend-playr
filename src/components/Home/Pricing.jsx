@@ -6,7 +6,7 @@ const Pricing = () => {
       <div className="container">
         <div className="section-header">
           <h2>Boost your Skills today</h2>
-          <a href="/" className="btn btn-lg">
+          <a href="/register" className="btn btn-lg">
             Get Started
           </a>
         </div>
