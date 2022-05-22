@@ -1,20 +1,6 @@
-import { useState } from "react";
-import { UploadOutlined, InboxOutlined } from "@ant-design/icons";
-import {
-  Card,
-  Form,
-  Input,
-  InputNumber,
-  Cascader,
-  Select,
-  Row,
-  Col,
-  Checkbox,
-  Button,
-  AutoComplete,
-  DatePicker,
-  Upload,
-} from "antd";
+// import { useState } from "react";
+import { UploadOutlined } from "@ant-design/icons";
+import { Card, Form, Input, Select, Button, DatePicker, Upload } from "antd";
 
 const { Option } = Select;
 const { RangePicker } = DatePicker;
@@ -54,41 +40,41 @@ const Organize = () => {
     form.resetFields();
   };
 
-  const prefixSelector = (
-    <Form.Item name="prefix" noStyle>
-      <Select
-        style={{
-          width: 70,
-        }}
-      >
-        <Option value="86">+86</Option>
-        <Option value="87">+87</Option>
-      </Select>
-    </Form.Item>
-  );
-  const suffixSelector = (
-    <Form.Item name="suffix" noStyle>
-      <Select
-        style={{
-          width: 70,
-        }}
-      >
-        <Option value="USD">$</Option>
-        <Option value="CNY">¥</Option>
-      </Select>
-    </Form.Item>
-  );
-  const [autoCompleteResult, setAutoCompleteResult] = useState([]);
+  // const prefixSelector = (
+  //   <Form.Item name="prefix" noStyle>
+  //     <Select
+  //       style={{
+  //         width: 70,
+  //       }}
+  //     >
+  //       <Option value="86">+86</Option>
+  //       <Option value="87">+87</Option>
+  //     </Select>
+  //   </Form.Item>
+  // );
+  // const suffixSelector = (
+  //   <Form.Item name="suffix" noStyle>
+  //     <Select
+  //       style={{
+  //         width: 70,
+  //       }}
+  //     >
+  //       <Option value="USD">$</Option>
+  //       <Option value="CNY">¥</Option>
+  //     </Select>
+  //   </Form.Item>
+  // );
+  // const [autoCompleteResult, setAutoCompleteResult] = useState([]);
 
-  const onWebsiteChange = (value) => {
-    if (!value) {
-      setAutoCompleteResult([]);
-    } else {
-      setAutoCompleteResult(
-        [".com", ".org", ".net"].map((domain) => `${value}${domain}`)
-      );
-    }
-  };
+  // const onWebsiteChange = (value) => {
+  //   if (!value) {
+  //     setAutoCompleteResult([]);
+  //   } else {
+  //     setAutoCompleteResult(
+  //       [".com", ".org", ".net"].map((domain) => `${value}${domain}`)
+  //     );
+  //   }
+  // };
 
   const rangeConfig = {
     rules: [
@@ -100,7 +86,7 @@ const Organize = () => {
     ],
   };
 
-  const normFile = (e: any) => {
+  const normFile = (e) => {
     console.log("Upload event:", e);
     if (Array.isArray(e)) {
       return e;
