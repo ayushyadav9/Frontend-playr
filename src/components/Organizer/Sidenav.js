@@ -153,7 +153,7 @@ function Sidenav({ color }) {
       <hr />
       <Menu theme="light" mode="inline">
         <Menu.Item key="1">
-          <NavLink to="/organize">
+          <NavLink to="/organize" replace>
             <span
               className="icon"
               style={{
@@ -166,7 +166,7 @@ function Sidenav({ color }) {
           </NavLink>
         </Menu.Item>
         <Menu.Item key="2">
-          <NavLink to="/ongoing-tournament">
+          <NavLink to="/ongoing-tournament" replace>
             <span
               className="icon"
               style={{
@@ -179,7 +179,7 @@ function Sidenav({ color }) {
           </NavLink>
         </Menu.Item>
         <Menu.Item key="3">
-          <NavLink to="/onspot-registration">
+          <NavLink to="/onspot-registration" replace>
             <span
               className="icon"
               style={{

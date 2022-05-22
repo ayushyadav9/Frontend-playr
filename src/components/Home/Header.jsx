@@ -44,18 +44,11 @@ const Header = () => {
         </div>
         <nav className="main-navgation flex-between flex-ver-top">
           <div className="nav-links">
-            <Link to="/scout" replace>
-              Scouting
-            </Link>
-            <Link to="/tournaments" replace>
-              Tournaments
-            </Link>
-            <Link to="/discussion-forums" replace>
-              Discussion Forums
-            </Link>
-            <Link to="/organize" replace>
-              Organizer
-            </Link>
+            <Link to="/scout">Scouting</Link>
+            <Link to="/tournaments">Tournaments</Link>
+            <Link to="/discussion-forums">Discussion Forums</Link>
+            <Link to="/organize">Organizer</Link>
+            <Link to="/dashboard">Dashboard</Link>
           </div>
           {userData == null ? (
             <div className="nav-buttons">
