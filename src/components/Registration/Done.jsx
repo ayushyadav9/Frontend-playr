@@ -1,20 +1,22 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Result, Button, Spin } from "antd";
 // import { baseURL } from "../../../api";
 import {useNavigate} from "react-router-dom"
 
-const Done = ({handelStatus }) => {
+const Done = ({formData }) => {
 
   // eslint-disable-next-line
   const [status, setStatus] = useState(0);
   const navigate = useNavigate();
 
-  if(status == 0){
+  if(status === 0){
     setInterval(() => {
       setStatus(1);
+      console.log(formData);
       //handelStatus(3);
     }, 1000);
   }
+
   //After Saving data set status to 1
   //And set handel status to 3;
 

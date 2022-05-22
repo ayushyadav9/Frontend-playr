@@ -39,7 +39,7 @@ const Register = () => {
     which:0
   });
   const handelStatus = (id)=>{
-      console.log(id)
+      
     if(id===0){
         setActive({...active,which:0,pStatus:"done",dStatus:"wait",sStatus:"wait",doneStatus:"wait"})
     }

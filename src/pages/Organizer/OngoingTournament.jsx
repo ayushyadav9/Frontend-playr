@@ -1,9 +1,8 @@
 import React from "react";
-import "./Tournament.css";
 import { tournaments } from "../../dummy/tournament";
 import { useNavigate } from "react-router-dom";
 
-const Tournament = () => {
+const OngoingTournament = () => {
   const navigate = useNavigate();
   return (
     <>
@@ -11,7 +10,7 @@ const Tournament = () => {
         <div class="container px-5 py-24 mx-auto ">
           <div class="text-center mb-20">
             <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">
-              Tournaments List
+              Ongoing Tournaments
             </h1>
             {/* <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug.</p> */}
             <div class="flex mt-6 justify-center">
@@ -52,7 +51,7 @@ const Tournament = () => {
                             onClick={() => navigate(`${tour.id}`)}
                             class="flex w-auto mx-10 text-white bg-indigo-500 inline-flex items-center border-0 px-2 py-1 focus:outline-none hover:bg-indigo-600 rounded text-lg"
                           >
-                            Apply
+                            Update
                             <svg
                               fill="none"
                               stroke="currentColor"
@@ -79,4 +78,4 @@ const Tournament = () => {
   );
 };
 
-export default Tournament;
+export default OngoingTournament;

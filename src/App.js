@@ -1,8 +1,8 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import "./tailwind.css"
+import "./tailwind.css";
 import Home from "./pages/Home/Home";
-import Registration from "./pages/Registration/Registration"
+import Registration from "./pages/Registration/Registration";
 import Tournament from "./pages/Tournaments/Tournament";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import Tables from "./pages/Dashboard/Tables";
@@ -12,14 +12,20 @@ import Profile from "./pages/Dashboard/Profile";
 import Photos from "./pages/Dashboard/Photos";
 import SignUp from "./pages/Dashboard/SignUp";
 import SignIn from "./pages/Dashboard/SignIn";
-import Main from "./components/DashboardLayout/Main";
+import DashboardMain from "./components/DashboardLayout/Main";
+import OrganizerMain from "./components/Organizer/Main";
 import "antd/dist/antd.min.css";
 import Scout from "./pages/Scout/Scout";
 import Forum from "./pages/DiscussionForum/Forum";
 import { Table } from "antd";
 import TourDetails from "./pages/Tournaments/TourDetails";
 import Login from "./pages/Registration/Login";
-
+import TournamentRegistration from "./pages/Organizer/Registration";
+import Organize from "./pages/Organizer/Organize";
+import OngoingTournament from "./pages/Organizer/OngoingTournament";
+import Brackets from "./components/TournamentBrackets/Brackets";
+import TournamentUpdate from "./pages/Organizer/TournamentUpdate";
+import UpdateMatchResult from "./pages/Organizer/UpdateMatchResult";
 
 function App() {
   return (
@@ -30,61 +36,109 @@ function App() {
         <Route exact path="/scout" element={<Scout />} />
         <Route exact path="/" element={<Home />} />
         <Route exact path="/register" element={<Registration />} />
-        <Route exact path="/scout" element={<Scout />} />
         <Route exact path="/discussion-forums" element={<Forum />} />
         <Route exact path="/login" element={<Login />} />
+        <Route exact path="/brackets" element={<Brackets />} />
+        <Route exact path="/signin" element={<SignIn />} />
         <Route
           exact
           path="/dashboard"
           element={
-            <Main>
+            <DashboardMain>
               <Dashboard />
-            </Main>
+            </DashboardMain>
           }
         />
         <Route
           exact
           path="/tables"
           element={
-            <Main>
+            <DashboardMain>
               <Table />
-            </Main>
+            </DashboardMain>
           }
         />
         <Route
           exact
           path="/billing"
           element={
-            <Main>
+            <DashboardMain>
               <Billing />
-            </Main>
+            </DashboardMain>
           }
         />
         <Route
           exact
           path="/rtl"
           element={
-            <Main>
+            <DashboardMain>
               <Rtl />
-            </Main>
+            </DashboardMain>
           }
         />
         <Route
           exact
           path="/profile"
           element={
-            <Main>
+            <DashboardMain>
               <Profile />
-            </Main>
+            </DashboardMain>
           }
         />
         <Route
           exact
           path="/photos"
           element={
-            <Main>
+            <DashboardMain>
               <Photos />
-            </Main>
+            </DashboardMain>
+          }
+        />
+        <Route
+          exact
+          path="/organize"
+          element={
+            <OrganizerMain>
+              <Organize />
+            </OrganizerMain>
+          }
+        />
+        <Route
+          exact
+          path="/ongoing-tournament"
+          element={
+            <OrganizerMain>
+              <OngoingTournament />
+            </OrganizerMain>
+          }
+        />
+        <Route
+          exact
+          path="/onspot-registration"
+          element={
+            <OrganizerMain>
+              <TournamentRegistration />
+            </OrganizerMain>
+          }
+        />
+
+        <Route
+          exact
+          path="/ongoing-tournament/:id"
+          element={
+            <OrganizerMain>
+              <TournamentUpdate />
+            </OrganizerMain>
+          }
+        />
+
+        <Route
+          exact
+          path="/ongoing-tournament/:tid/:mid"
+          element={
+            <OrganizerMain>
+              <UpdateMatchResult />
+            </OrganizerMain>
           }
         />
       </Routes>
