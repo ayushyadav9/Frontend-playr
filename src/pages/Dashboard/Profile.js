@@ -120,6 +120,14 @@ function Profile() {
     </div>
   );
 
+  const playerdata = {
+    id:292180,
+    name:"Sarah Jacob",
+    age:21,
+    jerseyNumber:27,
+    team :"Team A",
+  }
+
   const list = [
     {
       img: ava1,
@@ -399,7 +407,7 @@ function Profile() {
           <QRCodeSVG
             style={{ marginLeft: 25 }}
             size={250}
-            value="http://localhost:3000/profile"
+            value = {JSON.stringify(playerdata)}
           />
           <br />
           <p style={{ marginLeft: 21 }}>Any one with this QR can view your Profile</p>
