@@ -191,7 +191,7 @@ function Sidenav({ color }) {
           </NavLink>
         </Menu.Item>
         <Menu.Item key="3">
-          <NavLink to="/registration">
+          <NavLink to="/onspot-registration">
             <span
               className="icon"
               style={{

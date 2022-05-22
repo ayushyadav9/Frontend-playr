@@ -297,7 +297,7 @@ function Header({
               </a>
             </Dropdown>
           </Badge>
-          <Button type="link" onClick={showDrawer}>
+          {/* <Button type="link" onClick={showDrawer}>
             {logsetting}
           </Button>
           <Button
@@ -413,7 +413,7 @@ function Header({
                 </div>
               </div>
             </div>
-          </Drawer>
+          </Drawer> */}
           <Link to="/sign-in" className="btn-sign-in">
             {profile}
             <span>Sign in</span>

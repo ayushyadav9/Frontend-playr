@@ -270,14 +270,14 @@ function Header({
 
   return (
     <>
-      <div className="setting-drwer" onClick={showDrawer}>
+      {/* <div className="setting-drwer" onClick={showDrawer}>
         {setting}
-      </div>
+      </div> */}
       <Row gutter={[24, 0]}>
         <Col span={24} md={6}>
           <Breadcrumb>
             <Breadcrumb.Item>
-              <NavLink to="/">Pages</NavLink>
+              <NavLink to="/">Home</NavLink>
             </Breadcrumb.Item>
             <Breadcrumb.Item style={{ textTransform: "capitalize" }}>
               {name.replace("/", "")}
@@ -304,7 +304,7 @@ function Header({
               </a>
             </Dropdown>
           </Badge>
-          <Button type="link" onClick={showDrawer}>
+          {/* <Button type="link" onClick={showDrawer}>
             {logsetting}
           </Button>
           <Button
@@ -420,11 +420,11 @@ function Header({
                 </div>
               </div>
             </div>
-          </Drawer>
-          <Link to="/sign-in" className="btn-sign-in">
+          </Drawer> */}
+          {/* <Link to="/sign-in" className="btn-sign-in">
             {profile}
             <span>Sign in</span>
-          </Link>
+          </Link> */}
           <Input
             className="header-search"
             placeholder="Type here..."
